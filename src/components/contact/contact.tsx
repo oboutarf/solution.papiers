@@ -80,32 +80,34 @@ export default function ContactForm({
                 <form onSubmit={(e) => handleSubmit(e)} className="formcontactuscntctpg">
                     <h3>Entrez vos informations. Nos équipes vous contacteront dans un délai maximum de 48h.</h3>
                     <div className="ctninptscntctcontactpg">
-                        <div className={`inputctncntctus${formContactUs.first_name.length ? ' active' : ''}`}>
-                            <input value={formContactUs.first_name} onChange={(e) => {
-                                setFormContactUs(prev => ({
-                                    ...prev,
-                                    first_name: e.target.value
-                                }))
-                            }} type="text" />
-                            <label>Prénom*</label>
-                            {formContactUsErr.first_name.length ?
-                                <span className="formerr">{formContactUsErr.first_name}</span>
-                                : null
-                            }
-                        </div>
-                        <div className={`inputctncntctus${formContactUs.last_name.length ? ' active' : ''}`}>
-                            <input value={formContactUs.last_name} onChange={(e) => {
-                                setFormContactUs(prev => ({
-                                    ...prev,
-                                    last_name: e.target.value
-                                }))
-                            }} type="text" />
-                            <label>Nom*</label>
-                            {formContactUsErr.last_name.length ?
-                                <span className="formerr">{formContactUsErr.last_name}</span>
-                                : null
-                            }
+                        <div className="ctnnamefirstnamecntctform">
+                            <div className={`inputctncntctus${formContactUs.first_name.length ? ' active' : ''}`}>
+                                <input value={formContactUs.first_name} onChange={(e) => {
+                                    setFormContactUs(prev => ({
+                                        ...prev,
+                                        first_name: e.target.value
+                                    }))
+                                }} type="text" />
+                                <label>Prénom*</label>
+                                {formContactUsErr.first_name.length ?
+                                    <span className="formerr">{formContactUsErr.first_name}</span>
+                                    : null
+                                }
+                            </div>
+                            <div className={`inputctncntctus${formContactUs.last_name.length ? ' active' : ''}`}>
+                                <input value={formContactUs.last_name} onChange={(e) => {
+                                    setFormContactUs(prev => ({
+                                        ...prev,
+                                        last_name: e.target.value
+                                    }))
+                                }} type="text" />
+                                <label>Nom*</label>
+                                {formContactUsErr.last_name.length ?
+                                    <span className="formerr">{formContactUsErr.last_name}</span>
+                                    : null
+                                }
 
+                            </div>
                         </div>
                         <div className={`inputctncntctus${formContactUs.email.length ? ' active' : ''}`}>
                             <input value={formContactUs.email} onChange={(e) => {
@@ -135,10 +137,13 @@ export default function ContactForm({
                         </div>
                         <div className="ctndropdowntypeofcontact">
                             {formContactUsErr.typeRDV.length ?
-                                <label className={`formerr${openDropDown ? ' hide' : ''} dropdown`}>{formContactUsErr.typeRDV}</label>
+                                <label className={`formerr${openDropDown ? ' hide' : ''} dropdown`}>
+                                    {formContactUsErr.typeRDV}
+                                </label>
                                 : null
                             }
-                            <span className={`dropdownroller${openDropDown ? ' active' : ''}`} onClick={() => setopenDropDown(!openDropDown)}>
+                            <span className={`dropdownroller${openDropDown ? ' active' : ''}`}
+                                onClick={() => setopenDropDown(!openDropDown)}>
                                 A quelle service souhaitez-vous faire appel?
                             </span>
                             <div className={`ctnddownchooseeventtypecntct${openDropDown ? ' active':''}`}>
