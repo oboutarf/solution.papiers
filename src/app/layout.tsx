@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Navbar from '@/components/navbar/navbar';
+import Footer from '@/components/footer/footer';
+
+import '@/styles/global/global.css';
 
 const inter = Inter({
   subsets: ['latin']
@@ -18,8 +22,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <script async type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" />
+      </head>
       <body className={inter.className}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

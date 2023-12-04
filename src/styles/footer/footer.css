@@ -1,0 +1,20 @@
+.mainctnfooterwrp {
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 85, 164, .8);
+    position: relative;
+}
+
+.logofooterimg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .25s ease;
+}
+
+.logofooterimg:hover {
+    opacity: .7;
+}
