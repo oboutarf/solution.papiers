@@ -35,3 +35,15 @@ export const LINKS_SERVICES_HOMEPAGE = [
         img: 'https://demarchefrancaise.fr/wp-content/uploads/2023/10/oqtf.svg'
     }
 ];
+
+export const DROPDOWN_CONTACT_US = [
+    "VISA",
+    "Recours OQTF",
+    "Titre de séjour",
+    "Renouvellement de titre de séjour",
+    "Naturalisation française"
+];
+
+export const EMAIL_VALIDATOR = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+export const PHONE_VALIDATOR = /^\+?\d{5,15}$/;
