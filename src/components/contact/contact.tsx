@@ -15,7 +15,8 @@ export default function ContactForm({
 
     
 })  {
-    document.body.style.overflow = 'hidden';
+    if (typeof document !== 'undefined')
+        document.body.style.overflow = 'hidden';
 
     const [formContactUs, setFormContactUs] = useState({
         first_name: '',
