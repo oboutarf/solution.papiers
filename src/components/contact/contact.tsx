@@ -23,6 +23,7 @@ export default function ContactForm({
         last_name: '',
         email: '',
         phone: '',
+        zip_code: '',
         typeRDV: ''
     });
     const [formContactUsErr, setFormContactUsErr] = useState({
@@ -30,6 +31,7 @@ export default function ContactForm({
         last_name: '',
         email: '',
         phone: '',
+        zip_code: '',
         typeRDV: ''
     });
     const [openDropDown, setopenDropDown] = useState<boolean>(false);
@@ -60,6 +62,12 @@ export default function ContactForm({
                 phone: 'Saisis un numéro de téléphone valide.'
             })));
         setFormContactUsErr(prev => ({...prev, phone: ''}));
+        if (!formContactUs.zip_code.length)
+            return (setFormContactUsErr(prev => ({
+                ...prev,
+                phone: 'Saisis un code postal valide.'
+            })));
+        setFormContactUsErr(prev => ({...prev, zip_code: ''}));
         if (!formContactUs.typeRDV.length)
             return (setFormContactUsErr(prev => ({
                 ...prev,
@@ -122,18 +130,33 @@ export default function ContactForm({
                                 : null
                             }
                         </div>
-                        <div className={`inputctncntctus${formContactUs.phone.length ? ' active' : ''}`}>
-                            <input value={formContactUs.phone} onChange={(e) => {
-                                setFormContactUs(prev => ({
-                                    ...prev,
-                                    phone: e.target.value
-                                }))
-                            }} type="text" />
-                            <label>Numéro de téléphone*</label>
-                            {formContactUsErr.phone.length ?
-                                <span className="formerr">{formContactUsErr.phone}</span>
-                                : null
-                            }
+                        <div className="ctnphonezipcodeinpts">
+                            <div className={`inputctncntctus${formContactUs.phone.length ? ' active' : ''}`}>
+                                <input value={formContactUs.phone} onChange={(e) => {
+                                    setFormContactUs(prev => ({
+                                        ...prev,
+                                        phone: e.target.value
+                                    }))
+                                }} type="text" />
+                                <label>Numéro de téléphone*</label>
+                                {formContactUsErr.phone.length ?
+                                    <span className="formerr">{formContactUsErr.phone}</span>
+                                    : null
+                                }
+                            </div>
+                            <div className={`inputctncntctus${formContactUs.zip_code.length ? ' active' : ''}`}>
+                                <input value={formContactUs.zip_code} onChange={(e) => {
+                                    setFormContactUs(prev => ({
+                                        ...prev,
+                                        zip_code: e.target.value
+                                    }))
+                                }} type="text" />
+                                <label>Code postal*</label>
+                                {formContactUsErr.zip_code.length ?
+                                    <span className="formerr">{formContactUsErr.zip_code}</span>
+                                    : null
+                                }
+                            </div>
                         </div>
                         <div className="ctndropdowntypeofcontact">
                             {formContactUsErr.typeRDV.length ?
