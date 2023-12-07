@@ -6,34 +6,16 @@ import {
     EMAIL_VALIDATOR,
     PHONE_VALIDATOR
 } from '@/utils/constants/constant';
-import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 
 import '@/styles/contact/contact.css';
 
 export default function ContactForm({
-    // politics
+
 }: {
-    // politics: string
+
 })  {
     if (typeof document !== 'undefined')
         document.body.style.overflow = 'hidden';
-
-    const docs = [{
-        uri: "https://transcendance-avatars.s3.eu-west-3.amazonaws.com/POLITIQUE+DE+PROTECTION+DES+DONNE%CC%81ES+PERSONNELLES.docx"
-    }];
-        
-    //     return <DocViewer
-    //         pluginRenderers={DocViewerRenderers}
-    //         documents={docs2}
-    //         config={{
-    //         header: {
-    //             disableHeader: false,
-    //             disableFileName: false,
-    //             retainURLParams: false
-    //         }
-    //         }}
-    //         style={{ height: 500 }}
-    //   />
 
     const [formContactUs, setFormContactUs] = useState({
         first_name: '',
@@ -97,7 +79,6 @@ export default function ContactForm({
     return (
         <main className="wrapcontactformpg">
             <section className="ctnformadscontactpg">
-                {/* <div className="gradient"></div> */}
                 <div className="logotextctn">
                     <img className="topimgformlogo"
                         src="https://transcendance-avatars.s3.eu-west-3.amazonaws.com/Capture+d%E2%80%99e%CC%81cran+2023-12-04+a%CC%80+19.45.16.png" alt=""/>
@@ -215,9 +196,9 @@ export default function ContactForm({
                         <input type="checkbox"/>
                         <span className="ctntextpoliticsformcntctpg">
                             En soumettant ce formulaire, vous acceptez les
-                            <label> Conditions d'utilisation </label>
+                            <a href="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/cgu.docx" target="_blank"> Conditions d'utilisation </a>
                             et vous confirmez avoir lu la
-                            <label> Politique de confidentialité </label>
+                            <a href="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/ppdp.docx" target="_blank"> Politique de confidentialité </a>
                             de Solution Papiers
                         </span>
                     </div>

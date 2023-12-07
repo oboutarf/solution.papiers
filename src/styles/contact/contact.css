@@ -293,7 +293,7 @@
     font-size: 1rem;
 }
 
-.ctntextpoliticsformcntctpg label {
+.ctntextpoliticsformcntctpg a {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -301,9 +301,10 @@
     color: rgba(0, 85, 164);
     transition: all .2s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.ctntextpoliticsformcntctpg label:hover {
+.ctntextpoliticsformcntctpg a:hover {
     color: rgba(0, 85, 164, .8);
 }
 
@@ -327,4 +328,108 @@ input[type="checkbox"]:checked {
     cursor: pointer;
     border-radius: 4px;
     border: 1px solid transparent;
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 975px) {
+    .ctnformadscontactpg {
+        width: calc(50% - 50px);
+        height: calc(75% - 50px);
+        border-radius: 15px;
+        min-width: 600px;
+        box-shadow:
+            rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        padding: 25px;
+        display: flex;
+        position: relative;
+        max-height: calc(75% - 50px);
+        overflow-y: scroll;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: white;
+    }       
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 975px) {
+    .ctnformadscontactpg {
+        width: calc(50% - 50px);
+        height: calc(75% - 50px);
+        min-width: 600px;
+        padding: 25px;
+        max-height: calc(75% - 50px);
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    .ctnformadscontactpg {
+        width: calc(100% - 100px);
+        min-width: unset;
+        min-height: unset;
+        height: calc(100% - 100px);
+        padding: 50px;
+        max-height: unset;
+        border-radius: 0;
+    }       
+    .logotextctn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 2rem;
+    }
+    .topimgformlogo {
+        width: 200px;
+    }
+    .formcontactuscntctpg h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .ctntextpoliticsformcntctpg {
+        width: 95%;
+        max-width: 95%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: .8rem;
+    }
+    .ctntextpoliticsformcntctpg a {
+        font-size: .8rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        text-decoration: underline;
+        color: rgba(0, 85, 164);
+        transition: all .2s ease;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+    .ctnphonezipcodeinpts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2.5rem;
+        margin: 2.5rem 0 2.5rem 0;
+    }
+    .logotextctn h2 {
+        font-size: 1.35rem;
+    }
+    .formcontactuscntctpg {
+        margin: 0 0 0 0;
+    }
+    .ctnformadscontactpg {
+        width: calc(100% - 50px);
+        min-width: unset;
+        min-height: unset;
+        height: calc(100% - 50px);
+        padding: 25px;
+        max-height: unset;
+        border-radius: 0;
+    }       
 }
