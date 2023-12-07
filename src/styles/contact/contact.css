@@ -179,6 +179,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: rgba(0, 85, 164);
+    text-decoration: underline;
 }
 
 .dropdownroller:hover {
@@ -255,6 +256,12 @@
     color: rgba(239, 65, 53);
     bottom: -1.2rem;
     left: 0;
+}
+
+.formerr.politics {
+    position: static;
+    align-self: flex-start;
+    margin: .35rem 0 0 0;
 }
 
 
@@ -432,4 +439,13 @@ input[type="checkbox"]:checked {
         max-height: unset;
         border-radius: 0;
     }       
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+    .formcontactuscntctpg button {
+        width: 100%;
+    }
+        
 }

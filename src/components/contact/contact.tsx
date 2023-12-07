@@ -17,13 +17,15 @@ export default function ContactForm({
     if (typeof document !== 'undefined')
         document.body.style.overflow = 'hidden';
 
+    const [openDropDown, setopenDropDown] = useState<boolean>(false);
     const [formContactUs, setFormContactUs] = useState({
         first_name: '',
         last_name: '',
         email: '',
         phone: '',
         zip_code: '',
-        typeRDV: ''
+        typeRDV: '',
+        politics: false
     });
     const [formContactUsErr, setFormContactUsErr] = useState({
         first_name: '',
@@ -31,9 +33,9 @@ export default function ContactForm({
         email: '',
         phone: '',
         zip_code: '',
-        typeRDV: ''
+        typeRDV: '',
+        politics: true
     });
-    const [openDropDown, setopenDropDown] = useState<boolean>(false);
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -73,6 +75,12 @@ export default function ContactForm({
                 typeRDV: 'Saisis un type de rendez-vous.'
             })));
         setFormContactUsErr(prev => ({...prev, typeRDV: ''}));
+        if (!formContactUs.politics)
+            return (setFormContactUsErr(prev => ({
+                ...prev,
+                politics: true
+            })));
+        setFormContactUsErr(prev => ({...prev, politics: false}));
         alert('Form submitted!');
     };
 
@@ -193,7 +201,16 @@ export default function ContactForm({
                         </div>
                     </div>
                     <div className="ctncgupoliticsaccept">
-                        <input type="checkbox"/>
+                        <input
+                            checked={formContactUs.politics} 
+                            type="checkbox"
+                            onChange={(e) => 
+                                setFormContactUs(prev => ({
+                                    ...prev,
+                                    politics: !formContactUs.politics
+                                }))
+                            }
+                        />
                         <span className="ctntextpoliticsformcntctpg">
                             En soumettant ce formulaire, vous acceptez les
                             <a href="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/cgu.docx" target="_blank"> Conditions d'utilisation </a>
@@ -202,6 +219,11 @@ export default function ContactForm({
                             de Solution Papiers
                         </span>
                     </div>
+                    { formContactUsErr.politics ?
+                        <span className="formerr politics">{'Veuillez cocher cette case avant de continuer.'}</span>
+                        : 
+                        null
+                    }
                     <button type="submit">Envoyer le formulaire</button>
                 </form>
             </section>
