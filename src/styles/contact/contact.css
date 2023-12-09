@@ -441,8 +441,6 @@ input[type="checkbox"]:checked {
     }       
 }
 
-
-
 @media screen and (min-width: 0px) and (max-width: 450px) {
     .formcontactuscntctpg button {
         width: 100%;
