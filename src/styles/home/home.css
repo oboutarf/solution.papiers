@@ -32,6 +32,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding: 2.5rem 5rem 2.5rem 10%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    left: 0;
+    background-color: rgba(0, 85, 164, .35);
 }
 
 .wrpttlhmpgmain h1 {
@@ -148,8 +153,8 @@
     width: calc(100% - 3rem);
     z-index: 1;
     position: absolute;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     background-color: rgba(239, 65, 53, .7);
     padding: 1rem 1.5rem 1rem 1.5rem;
     transition: all .3s ease;
@@ -168,39 +173,3 @@
 .ctnservicesblckhmpg:hover .ctntxtnosserviceshmpg {
     background-color: rgba(239, 65, 53);
 }
-
-.peoplecarrousselhmpg {
-    width: calc(100% - 10%);
-    max-width: calc(100% - 10%);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 0 0 10%;
-    margin: 0 0 5rem 0;
-}
-/* START PEOPLE COMPONENT */
-.ctnpeoplehistorycntnt {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 70%;
-    gap: 2.5rem;
-}
-
-.ctnpeoplenamehsitory {
-    padding: 1.5rem;
-    background-color: rgba(0, 85, 164);
-    color: white;
-    border-radius: 20px;
-}
-
-.ctnpeoplenamehsitory h4 {
-    font-size: 1.35rem;
-    font-weight: 900;
-    margin: 0 0 .35rem 0;
-    text-decoration: underline;
-}
-
-/* END PEOPLE COMPONENT */

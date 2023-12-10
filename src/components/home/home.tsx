@@ -2,11 +2,9 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import Calendly from '@/components/calendly/calendly-form';
-import {
-    LINKS_SERVICES_HOMEPAGE,
-    LIST_REDIRECTS_SERVICES,
-    PERSONNES_HISTOIRES_HOMEPAGE
-} from '@/utils/constants/constant';
+import { LINKS_SERVICES_HOMEPAGE } from '@/utils/constants/constant';
+import { InlineWidget } from "react-calendly";
+import PeopleCarroussel from '@/components/home/people-carroussel';
 
 import '@/styles/home/home.css';
 
@@ -15,6 +13,10 @@ export default function Home({
 }: {
     
 })  {
+
+    useEffect(() => {
+
+    }, [])
 
     return (
         <main className="wraphomepg">
@@ -53,21 +55,20 @@ export default function Home({
                 </div>
             ))}
             </div>
-            <div className="peoplecarrousselhmpg">
-            { PERSONNES_HISTOIRES_HOMEPAGE.map((person, idx) => (
-                <div className="ctnpeoplehistorycntnt">
-                    <div className="ctnpeoplenamehsitory">
-                        <h4>{person.name}</h4>
-                        <span>{person.histoire}</span>
-                    </div>
-                    <img
-                        src={person.people_img}
-                        alt=""
-                    />
-                </div>
-            ))}
-            </div>
+            <PeopleCarroussel /> 
             <Calendly />
+            {/* <InlineWidget
+                styles={{
+                    minWidth: '100%',
+                    height: '750px',
+                    margin: '0 0 5rem 0',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    background: 'rgba(0, 85, 164, .9);'
+                }}
+                url="https://calendly.com/solutionpapiers/30min?month=2023-12"
+            /> */}
         </main>
     );
 };
