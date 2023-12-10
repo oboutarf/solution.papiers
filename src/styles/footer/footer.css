@@ -1,8 +1,6 @@
 .mainctnfooterwrp {
     width: 100%;
     background-color: rgba(0, 85, 164, .8);
-    position: absolute;
-    bottom: 0;
     padding: 0 0 5rem 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -81,7 +79,7 @@
     background: rgba(239, 65, 53, .8);
 }
 
-.ctnanosservicesfooter {
+.al {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -112,3 +110,88 @@
 .ctncontactinfofooter:last-of-type {
     margin: .25rem 0 0 0;
 }
+
+.ctnnewsletterfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.ctntxtnewsletterftr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: .75rem 1.5rem .75rem 1.5rem;
+}
+.ctntxtnewsletterftr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ctntxtnewsletterftr h3 {
+    color: rgba(0, 85, 164);
+    margin: 0 0 0 0;
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.subtxtfooter {
+    font-size: .8rem;
+    color: rgba(0, 85, 164);
+    font-weight: 350;
+    max-width: 250px;
+}
+
+.ctninptnewsletterftr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 300px;
+    margin: .5rem 0 .5rem 0;
+}
+
+.indicinputlblfooter {
+    font-weight: 450;
+    font-size: .85rem;
+    color: rgba(0, 85, 164);
+}
+
+.inputnewsletter {
+    height: 27px;
+    appearance: none;
+    outline: none;
+    border: 1px solid rgba(0, 85, 164, .8);
+    width: calc(100% - 2rem);
+    padding: 0 1rem 0 1rem;
+    border-radius: 5px;
+}
+
+.btnfooternewsletter {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background: rgba(0, 85, 164);
+    font-family: inherit;
+    align-self: flex-end;
+    margin: 1rem 0 0 0;
+    padding: .25rem 1.5rem .25rem 1.5rem;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all .25s ease;
+    border: none;
+}
+
+.btnfooternewsletter:hover {
+    background: rgba(0, 85, 164, .8);
+}
+

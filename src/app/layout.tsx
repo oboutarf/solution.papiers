@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"/>
-        <script async type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" />
+        <script async type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
       </head>
       <body className={inter.className}>
         <Navbar />

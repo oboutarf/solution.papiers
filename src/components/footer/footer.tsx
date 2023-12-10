@@ -1,7 +1,7 @@
-'use client';
 
+'use client';
 import React, { useRef, useState, useEffect } from 'react';
-import { LIST_REDIRECTS_FOOTER_SERVICES } from "@/utils/constants/constant";
+import { LIST_REDIRECTS_SERVICES } from "@/utils/constants/constant";
 
 import '@/styles/footer/footer.css';
 
@@ -34,7 +34,7 @@ export default function Footer({
                 <div className="ctnanosservicesfooter">
                     <h3>NOS SERVICES</h3>
                     <div className="ctncntntnsoservicesfooter">
-                        {LIST_REDIRECTS_FOOTER_SERVICES.map((redirect, idx) => (
+                        {LIST_REDIRECTS_SERVICES.map((redirect, idx) => (
                             <a
                                 href={redirect.link}
                                 className="ctnservicestxtfooter"
@@ -66,7 +66,24 @@ export default function Footer({
                        </div>
                     </div>
                 </div>
-
+                <div className="ctnnewsletterfooter">
+                    <div className="ctntxtnewsletterftr">
+                        <h3>S'abonner à la newsletter</h3>
+                        <span className="subtxtfooter">Restez informé de toute l’actualité des différentes démarches !</span>
+                        <div className="ctninptnewsletterftr">
+                            <label className="indicinputlblfooter">
+                                Adresse email
+                            </label>
+                            <input
+                                type="text"
+                                className="inputnewsletter"
+                            />
+                            <button className="btnfooternewsletter">
+                                S'abonner
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </footer>

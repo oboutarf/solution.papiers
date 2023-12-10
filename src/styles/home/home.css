@@ -5,236 +5,202 @@
     align-items: center;
     justify-content: center;
     margin: 100px 0 0 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.calendlybooking {
-    width: 700px;
-    height: 320px;
+.mainhmpgimg {
+    width: 100%;
 }
 
-.menuimghmpgpg {
-    width: 100%;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    box-shadow: 0 4px 2px -2px #50505099;
-}     
-
-.ctnwrapmainimg {
-    width: 100%;
+.mainbghomepage {
+    background-color:rgba(0, 85, 164);
     position: relative;
+    width: 100%;
+    /* height: calc(500px - 20rem);
+    padding: 10rem;
+    width: calc(100% - 20rem); */
+    height: 650px;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     align-items: center;
 }
 
-.ctnservicesrdrctsmainimg {
-    width: 100%;
+.wrpttlhmpgmain {
+    display: flex;
     position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 1.5rem;
-    bottom: 20px;
-    right: 20px;
-    animation: slideFromRight 1.2s ease;
-}
-
-.wrapservicehmpg {
-    display: flex;
-    width: calc(200px + 1.5rem);
-    padding: .75rem;
-    background-color: rgba(0, 85, 164, .8);
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    border-radius: 15px;
-    justify-content: center;
-    box-shadow:
-        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    transition: all .35s ease;
-}
-
-.wrapservicehmpg:hover {
-    transform: translateY(-10px);
-}
-
-.wrapservicehmpg span {
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 550;
-}
-
-.ctntxthmpgmain {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    margin: 2.5rem 0 2.5rem 0;
 }
 
-.ctntxthmpgmain h1 {
-    width: 80%;
-    text-align: center;
+.wrpttlhmpgmain h1 {
+    display: flex;
+    margin: 0 0 0 0;
+    font-size: 2.5rem;
     font-weight: 900;
-    color: rgba(0, 85, 164);
-    margin: 0 0 2rem 0;
-    font-size: 2.2rem;
+    color: white;
 }
 
-.ctntxthmpgmain span {
-    width: 90%;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #505050;
-}
-
-.ctncalendlyappointment {
-    width: 100%;
-    height: 1000px;
+.mainhomepagebtnrdctn {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    background: rgba(239, 65, 53);
+    font-family: inherit;
+    margin: 1rem 0 0 0;
+    padding: .25rem 1.25rem .25rem 1.5rem;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all .25s ease;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 1.5rem 0;
+    gap: .5rem;
 }
 
-.gtherprsnlinfoctn-hmpg {
-    width: 80%;
-    margin: 0 0 5rem 0;
+.mainhomepagebtnrdctn:hover img {
+    transform: translateX(5px);
+}
+
+.mainhomepagebtnrdctn img {
+    width: 20px;
+    transition: all .3s ease;
+}
+
+.mainhmpgservices {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.gtherprsnlinfoctn-hmpg h2 {
-    font-size: 2rem;
-    width: 80%;
-    text-align: center;
-    color: rgba(0, 85, 164);
-    align-self: center;
-}
-
-.wrpcnctusinptdescrpt {
-    margin: 1.5rem 0 0 0;
-    width: 100%;
-    display: flex;
+    padding: 2.5rem;
+    background-color: rgba(239, 65, 53);
+    margin: 0 0 2rem 0;
+    border-radius: 10px;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-}
-
-.ctninptscntct {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    width: 80%;
     gap: 2rem;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
 
-.ctninfosapointmenthmpg {
-    width: 50%;
+.ctnservicesblckhmpg {
     display: flex;
+    width: calc((80% / 4) - 3rem);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    min-height: 200px;
     flex-direction: column;
-    align-items: flex-start;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     justify-content: flex-start;
-}
-
-.ctninfosapointmenthmpg span {
-    max-width: 90%;
-    color: #505050;
-    font-size: 1.25rem;
-    margin: 0 0 2rem 0;
-}
-
-.ctninfosapointmenthmpg button {
-    appearance: none;
-    border: none;
-    outline: none;
-    font-size: 1.1rem;
-    padding: .5rem 1.5rem .5rem 1.5rem;
-    border-radius: 60px;
-    font-weight: 550;
-    color: white;
-    margin: .25rem 0 .25rem 0;
+    background-color: white;
+    align-items: flex-start;
+    border-radius: 15px;
     cursor: pointer;
-    transition: all .25s ease;
-    opacity: 1;
-    background: rgba(239, 65, 53);
-}
-
-.inputctnhmpgcntctus {
-    display: flex;
-    width: 100%;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
+    overflow: hidden;
 }
 
-.inputctnhmpgcntctus input {
-    width: 100%;
-    height: 100%;
-    appearance: none;
-    color: #505050;
-    border: none;
-    border-bottom: 2px solid rgba(0, 85, 164, .8);
-    outline: none;
+.ctnservicesblckhmpg h2 {
+    margin: 0 0 0 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: rgba(239, 65, 53);
 }
 
-.inputctnhmpgcntctus.active label,
-.inputctnhmpgcntctus input:focus + label {
+.bgimgservicehmpg {
+    margin: auto;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    transition: all .3s ease;
+    max-height: 100%;
+    object-fit: cover;
     position: absolute;
-    font-size: .8rem;
-    color: rgba(0, 85, 164, .7);
-    top: -.8rem;
-}
-
-.inputctnhmpgcntctus label {
-    position: absolute;
-    font-size: 1rem;
-    color: rgba(0, 85, 164);
+    top: 0;
     left: 0;
-    transition: all .25s ease;
 }
 
-.ctninptscntct button {
-    appearance: none;
-    border: none;
-    outline: none;
-    font-size: 1.1rem;
-    padding: .5rem 1.5rem .5rem 1.5rem;
-    border-radius: 60px;
-    font-weight: 550;
+.ttlmainhmpgservices {
+    align-self: center;
+    font-size: 1.35rem;
+    width: calc(80%);
+    text-align: left;
+    margin: 2rem 0 0 0;
+    color: rgba(239, 65, 53);
+    display: flex;
+    gap: .5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.linettlserviceshmpg {
+    border: 1px solid rgba(239, 65, 53);
+    height: 0;
+    padding: 0;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.ctntxtnosserviceshmpg {
+    height: calc(40% - 2rem);
+    width: calc(100% - 3rem);
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(239, 65, 53, .7);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    transition: all .3s ease;
+}
+
+.ctntxtnosserviceshmpg span {
     color: white;
-    margin: .25rem 0 .25rem 0;
-    cursor: pointer;
-    transition: all .25s ease;
-    opacity: 1;
-    align-self: flex-end;
-    background: rgba(0, 85, 164);
+    font-weight: 900;
+    font-size: 1.3rem;
 }
 
-.ctninptscntct button:hover {
-    background: rgba(0, 85, 164, .7);
+.ctnservicesblckhmpg:hover .bgimgservicehmpg {
+    transform: scale(1.05);
 }
 
-
-.ctninfosapointmenthmpg button:hover {
-    opacity: .7;
+.ctnservicesblckhmpg:hover .ctntxtnosserviceshmpg {
+    background-color: rgba(239, 65, 53);
 }
 
-@keyframes slideFromRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+.peoplecarrousselhmpg {
+    width: calc(100% - 10%);
+    max-width: calc(100% - 10%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 10%;
+    margin: 0 0 5rem 0;
 }
+/* START PEOPLE COMPONENT */
+.ctnpeoplehistorycntnt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    gap: 2.5rem;
+}
+
+.ctnpeoplenamehsitory {
+    padding: 1.5rem;
+    background-color: rgba(0, 85, 164);
+    color: white;
+    border-radius: 20px;
+}
+
+.ctnpeoplenamehsitory h4 {
+    font-size: 1.35rem;
+    font-weight: 900;
+    margin: 0 0 .35rem 0;
+    text-decoration: underline;
+}
+
+/* END PEOPLE COMPONENT */

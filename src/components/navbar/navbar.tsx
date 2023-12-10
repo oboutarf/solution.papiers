@@ -16,7 +16,7 @@ export default function Navbar({
         <nav className={`wrapnavbarctn`}>
             <div className="wrpnavbarcntnt">
                 <a href="/">
-                    <img src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/solutionpapierlogo-removebg-preview.png" alt=""/>
+                    <img src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/solutionpapierlogo-removebg-preview.png" alt=""/>
                 </a>
                 <div className="ctnnavredirectslnks">
                 {LINKS_NAVBAR.map((link, idx) => (
