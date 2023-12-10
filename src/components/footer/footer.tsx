@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef, useState, useEffect } from 'react';
+import { LIST_REDIRECTS_FOOTER_SERVICES } from "@/utils/constants/constant";
 
 import '@/styles/footer/footer.css';
 
@@ -17,10 +18,57 @@ export default function Footer({
 
     return (
         <footer className="mainctnfooterwrp">
-            <img onClick={() => { 
-                window.scrollTo({top: 0, behavior: 'smooth'});
-             }} className="logofooterimg"
-                src="https://transcendance-avatars.s3.eu-west-3.amazonaws.com/Capture_d_e%CC%81cran_2023-12-04_a%CC%80_13.52.09-removebg-preview.png" alt=""/>
+            <div className="wrpfootercntnt">
+                <div className="ctnaproposfooter">
+                    <h3>A PROPOS</h3>
+                    <div className="ctncntntaproposfooter">
+                        <span className="cntntapropostxt">Simplifiez vos démarches administratives, pour l’obtention de la nationalité française ou d’un titre de séjour. Nos spécialistes vous conseillent et vous guident, prenez dès maintenant rendez-vous avec l’un d’entre eux.</span>
+                        <a
+                            href="/contact"
+                            className="cntctusfooter"
+                        >
+                            Nous contacter
+                        </a>
+                    </div>
+                </div>
+                <div className="ctnanosservicesfooter">
+                    <h3>NOS SERVICES</h3>
+                    <div className="ctncntntnsoservicesfooter">
+                        {LIST_REDIRECTS_FOOTER_SERVICES.map((redirect, idx) => (
+                            <a
+                                href={redirect.link}
+                                className="ctnservicestxtfooter"
+                            >
+                                &bull; {redirect.text}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+                <div className="ctncontactusfooter">
+                    <h3>NOUS CONTACTER</h3>
+                    <div className="ctncntntcontactusfooter">
+                       <span className="ctnaddrfootercontactus">
+                        Pl. de l'Hôtel de Ville<br/>75004 Paris, France
+                       </span>
+                       <div className="ctncontactinfofooter">
+                            <img
+                                alt=""
+                                src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/lucidephoneicon.svg"
+                            />
+                            <span>+33 1 23 74 23 12</span>
+                       </div>
+                       <div className="ctncontactinfofooter">
+                            <img
+                                alt=""
+                                src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/lucidemailicon.svg"
+                            />
+                            <span>contact@solution-papiers.fr</span>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+
         </footer>
     );
 };

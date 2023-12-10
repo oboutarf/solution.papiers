@@ -1,18 +1,10 @@
 export const LINKS_NAVBAR = [
-    {
-        text: 'Rendez-vous',
-        link: '/rendez-vous'
-    },
     {  
         text: 'Nos services',
         link: '/nos-services'
     },
     {  
-        text: 'Nous contacter',
-        link: '/nous-contacter'
-    },
-    {  
-        text: 'Qui sommes-nous',
+        text: 'Qui sommes-nous?',
         link: '/qui-sommes-nous'
     }
 ];
@@ -44,6 +36,24 @@ export const DROPDOWN_CONTACT_US = [
     "Naturalisation française"
 ];
 
+export const LIST_REDIRECTS_FOOTER_SERVICES = [
+    {
+        link: "/contact",
+        text: "Naturalisation française"
+    },
+    {
+        link: "/contact",
+        text: "Recours OQTF"
+    },
+    {
+        link: "/contact",
+        text: "Titre de séjour"
+    },
+    {
+        link: "/contact",
+        text: "Renouvellement de titre de séjour"
+    },
+];
 export const EMAIL_VALIDATOR = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 export const PHONE_VALIDATOR = /^\+?\d{5,15}$/;

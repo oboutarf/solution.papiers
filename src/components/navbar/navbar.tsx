@@ -10,29 +10,42 @@ export default function Navbar({
 }: {
 
     
-})  {
-
-    const [redirectLinkHovered, setRedirectLinkHovered] = useState<boolean>(false);
-
+})      {
+    
     return (
-        <nav className={`wrapnavbarctn${redirectLinkHovered ? ' red' : ''}`}>
+        <nav className={`wrapnavbarctn`}>
             <div className="wrpnavbarcntnt">
                 <a href="/">
-                    <img src="https://transcendance-avatars.s3.eu-west-3.amazonaws.com/Capture+d%E2%80%99e%CC%81cran+2023-12-04+a%CC%80+13.52.09.png" alt=""/>
+                    <img src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/solutionpapierlogo-removebg-preview.png" alt=""/>
                 </a>
                 <div className="ctnnavredirectslnks">
                 {LINKS_NAVBAR.map((link, idx) => (
-                    <a onClick={() => { return false }} href={link.link}
-                    onMouseEnter={() => setRedirectLinkHovered(true)}
-                    onMouseLeave={() => setRedirectLinkHovered(false)} >
+                    <a
+                        onClick={() => {
+                            return (false); 
+                        }}
+                        href={link.link}
+                    >
                         {link.text}
                     </a>
                 ))}
                 </div>
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16" fill="none"><path d="M2.59825 9.8432C1.6044 8.12168 0.870759 6.25885 0.548278 4.74574C0.386589 3.98708 0.33289 3.33746 0.389308 2.84633C0.446963 2.34443 0.607609 2.09048 0.788564 1.98602L0.788569 1.98601L3.0714 0.668051L3.07145 0.668022C3.20828 0.588995 3.37992 0.567098 3.52886 0.603263C3.67433 0.638586 3.77164 0.720507 3.81527 0.827819C3.81528 0.827832 3.81528 0.827844 3.81529 0.827856L4.7842 3.21242L4.78422 3.21245C4.93272 3.57781 4.83331 3.88972 4.60122 4.02373L4.60119 4.02374L3.72111 4.53198C3.72109 4.53199 3.72108 4.532 3.72106 4.53201C3.41609 4.70809 3.30272 5.02732 3.27541 5.32555C3.24792 5.62559 3.29799 5.97531 3.39012 6.33693C3.57564 7.06517 3.95859 7.94288 4.42084 8.78227L4.42442 8.78878L4.42827 8.79514C4.9241 9.61523 5.49276 10.3857 6.03069 10.9105C6.2978 11.1711 6.57564 11.3893 6.84923 11.5155C7.12118 11.641 7.45433 11.7024 7.75932 11.5263L8.63944 11.0183L8.63946 11.0183C8.8716 10.8842 9.19155 10.9541 9.43375 11.2654C9.43376 11.2654 9.43376 11.2654 9.43376 11.2654L11.0143 13.2969L11.0143 13.2969C11.0854 13.3883 11.1077 13.5135 11.0656 13.6572C11.0224 13.8042 10.9176 13.942 10.7809 14.021C10.7808 14.0211 10.7808 14.0211 10.7807 14.0211L8.49785 15.339L8.49782 15.339C8.31692 15.4435 8.0167 15.4556 7.55322 15.2546C7.09969 15.0579 6.56396 14.6866 5.98779 14.1673C4.83863 13.1315 3.59219 11.5647 2.59825 9.8432ZM2.59825 9.8432L2.27989 10.027L2.59825 9.8432Z" stroke="white" stroke-width="0.73521"></path><path d="M9.43055 5.8981C9.0138 5.17663 8.32271 4.61439 7.45632 4.38221L7.25781 5.12536C7.92124 5.30316 8.44924 5.73191 8.76654 6.28138V6.28293C9.08404 6.83279 9.19161 7.50473 9.014 8.16777L9.75695 8.36628C9.98931 7.49912 9.84788 6.61919 9.43133 5.89771L9.43055 5.8981Z" fill="white"></path><path d="M10.7882 5.11433C10.1714 4.04634 9.1473 3.21323 7.86185 2.86884L7.66334 3.61198C8.74391 3.90143 9.60487 4.60162 10.1234 5.49954L10.124 5.49915C10.6417 6.3963 10.817 7.49196 10.5274 8.57311L11.2703 8.77181C11.6145 7.48751 11.405 6.18425 10.7882 5.11588V5.11433Z" fill="white"></path><path d="M12.145 4.33094C11.3278 2.91566 9.97055 1.81188 8.26737 1.35547L8.06887 2.09861C9.56734 2.50008 10.7613 3.47094 11.4802 4.71615C12.1986 5.96059 12.4422 7.47977 12.0407 8.97863L12.7837 9.17714C13.2399 7.47435 12.9625 5.747 12.145 4.33094Z" fill="white"></path></svg>
-                    Nous contacter
-                </button>
+                <div className="ctninteractbtnsnav">
+                    <button className="takeapointmentrdrct">
+                        <img
+                            alt=""
+                            src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/luciderdvicon.svg"
+                        />
+                        Prendre rendez-vous
+                    </button>
+                    <button className="callusbtnnav">
+                        <img
+                            alt=""
+                            src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/lucidephoneicon.svg"
+                        />
+                        01 23 74 23 12
+                    </button>
+                </div>
             </div>
         </nav>
     );
