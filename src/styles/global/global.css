@@ -9,3 +9,31 @@ html, body {
     font-size: 16px;
     overflow-x: hidden;
 }
+
+.redirectwhatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: visible;
+    bottom: 75px;
+    right: 20px;
+    background-color: rgba(239, 65, 53);
+    width: 32px;
+    height: 32px;
+    padding: .75rem;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 100%;
+    transition: all .25s ease;
+}
+
+.redirectwhatsapp:hover {
+    box-shadow: unset;
+    background-color: rgba(239, 65, 53, .9);
+}
+
+.redirectwhatsapp svg {
+    overflow: visible;
+}

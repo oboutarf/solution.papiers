@@ -1,6 +1,10 @@
 
 export const LINKS_NAVBAR = [
     {  
+        text: 'Acceuil',
+        link: '/'
+    },
+    {  
         text: 'Nos services',
         link: '/services'
     },
@@ -30,7 +34,7 @@ export const LINKS_SERVICES_HOMEPAGE = [
         text: 'Recours OQTF',
         img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/nonaloqtfsolutionpapier.jpg',
         link: "/services?key=oqtf"
-    }
+    }   
 ];
 
 export const PERSONNES_HISTOIRES_HOMEPAGE = [
