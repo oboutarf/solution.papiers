@@ -37,6 +37,31 @@ export const LINKS_SERVICES_HOMEPAGE = [
     }   
 ];
 
+
+export const LINKS_SERVICES_PAGE = [
+    {
+        text: 'Naturalisation française',
+        img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/naturalisationpapierssolution.jpg',
+        link: "/services?key=naturalisation"
+    },
+    {  
+        text: 'Renouvellement titre de séjour',
+        img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/renouvellementsolutionpapiers.jpg',
+        link: "/services?key=renouvellement"
+    },
+    {  
+        text: 'Titre de séjour',
+        img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/passeportsolutionspapier.jpeg',
+        link: "/services?key=titre-de-sejour"
+    },
+    {  
+        text: 'Recours OQTF',
+        img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/nonaloqtfsolutionpapier.jpg',
+        link: "/services?key=oqtf"
+    }   
+];
+
+
 export const PERSONNES_HISTOIRES_HOMEPAGE = [
     {
         people_img: "https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/photos_personnes/image%20(3).png",
