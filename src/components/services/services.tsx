@@ -26,8 +26,8 @@ export default function Services({
 					className="wrapservicessrvcspg"
 				>
 					<div className="wrpservicettltxt">
-						<h3>{services.text}</h3>
-						<span></span>
+						<h3>{services.title}</h3>
+						<span>{services.descrpition}</span>
 						<a
 							href={services.link}
 							className="txtservicespgbtn"

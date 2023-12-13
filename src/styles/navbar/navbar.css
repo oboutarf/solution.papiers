@@ -6,6 +6,7 @@
     background-color: white;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
     position: fixed;
     top: 0;
     box-shadow: -1px 2px 0px 0px rgba(0,85,164,0.75);
@@ -85,6 +86,7 @@
     gap: .5rem;
 
     display: flex;
+    text-decoration: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -92,7 +94,7 @@
     transition: all .25s ease;
 }
 
-.wrpnavbarcntnt button:hover {
+.callusbtnnav:hover {
     opacity: .75;
 }
 
@@ -104,6 +106,7 @@
     color: white;
     padding: .5rem 1rem .5rem 1rem;
     border-radius: 80px;
+    text-decoration: none;
     cursor: pointer;
     font-weight: 550;
     font-size: 1rem;
@@ -115,6 +118,10 @@
     justify-content: center;
     opacity: 1;
     transition: all .25s ease;   
+}
+
+.takeapointmentrdrct:hover {
+    opacity: .8;
 }
 
 .callusbtnnav img,

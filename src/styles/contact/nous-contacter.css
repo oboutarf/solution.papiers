@@ -1,0 +1,22 @@
+.ctncntctpgwrp {
+    display: flex;
+    margin: 100px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wrpcontactform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.ctncontactformpg {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

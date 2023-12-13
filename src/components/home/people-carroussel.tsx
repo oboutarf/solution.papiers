@@ -22,7 +22,6 @@ export default function PeopleCarroussel({
                 carroussel.style.transform = `translateX(${carrousselControl - 60}%)`;
                 setCarrousselControl(carrousselControl - 60);
                 setCarrousselIndex(carrousselIndex + 1);
-                    
             }
             else {
                 if (!carrousselIndex)
@@ -47,11 +46,11 @@ export default function PeopleCarroussel({
                     return (setCarrousselControl(0), setCarrousselIndex(0));
             }
         };
-        // const intervalCarroussel = setInterval(scrollCarrousselPeople, 4500);
+        const intervalCarroussel = setInterval(scrollCarrousselPeople, 4500);
 
-        // return (() =>
-        //     clearInterval(intervalCarroussel)
-        // );
+        return (() =>
+            clearInterval(intervalCarroussel)
+        );
     }, [carrousselControl, carrousselIndex]);
 
     return (

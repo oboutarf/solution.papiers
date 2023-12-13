@@ -63,20 +63,23 @@ export default function Navbar({
                 ))}
                 </div>
                 <div className="ctninteractbtnsnav">
-                    <button className="takeapointmentrdrct">
+                    <a
+                        href="/nous-contacter"
+                        className="takeapointmentrdrct"
+                    >
                         <img
                             alt=""
                             src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/luciderdvicon.svg"
                         />
                         Prendre rendez-vous
-                    </button>
-                    <button className="callusbtnnav">
+                    </a>
+                    <a className="callusbtnnav" href="https://wa.me/123456789" target="_blank">
                         <img
                             alt=""
                             src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/lucidephoneicon.svg"
                         />
                         01 23 74 23 12
-                    </button>
+                    </a>
                 </div>
             </div>
         </nav>

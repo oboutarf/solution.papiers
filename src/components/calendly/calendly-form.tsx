@@ -17,7 +17,8 @@ export default function Calendly({
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                background: 'rgba(0, 85, 164, .9);'
+                // background: 'rgba(0, 85, 164, .9);',
+                // backdropFilter: 'blur(8px)'
             }}
             url="https://calendly.com/solutionpapiers/30min?month=2023-12"
         />

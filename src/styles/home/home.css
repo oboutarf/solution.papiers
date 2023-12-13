@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    user-select: none;
     justify-content: center;
     margin: 100px 0 0 0;
     font-family: 'Poppins', sans-serif;
@@ -10,6 +11,7 @@
 
 .mainhmpgimg {
     width: 100%;
+    user-select: none;
 }
 
 .mainbghomepage {
@@ -22,6 +24,7 @@
     height: 650px;
     display: flex;
     justify-content: center;
+    user-select: none;
     overflow: hidden;
     align-items: center;
 }
@@ -58,6 +61,7 @@
     border-radius: 60px;
     cursor: pointer;
     transition: all .25s ease;
+    text-decoration: none;
     border: none;
     display: flex;
     align-items: center;
@@ -130,7 +134,7 @@
     font-size: 1.35rem;
     width: calc(80%);
     text-align: left;
-    margin: 2rem 0 0 0;
+    margin: 2.5rem 0 0 0;
     color: rgba(239, 65, 53);
     display: flex;
     gap: .5rem;
@@ -178,14 +182,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem 0 2.5rem 0;
+    margin: 3.5rem 0 2.5rem 0;
     width: 100%;
     justify-content: flex-start;
 }
 
 .ctnhmpgmaintxt h1 {
     max-width: 80%;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 900;
     text-align: center;
     margin: 0 0 0 0;
@@ -194,271 +198,12 @@
 
 .ctnhmpgmaintxt h3 {
     max-width: 80%;
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     text-align: center;
-    margin: 1.25rem 0 0 0;
+    margin: 1.75rem 0 0 0;
     color: #505050;
     font-weight: 550;
 }
-
-/* START COMPONENT CONTACT */
-.formcontactuscntctpg {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    margin: 2rem 0 5rem 0;
-    align-items: center;
-    width: calc(70% - 5rem);
-    border-radius: 20px;
-    justify-content: flex-start;
-    padding: 2.5rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
-.formcontactuscntctpg h3 {
-    font-family: 'Poppins', sans-serif;
-    margin: 0 0 0 0;
-    font-weight: 900;
-    color: rgba(0, 85, 164);
-    font-size: 1.75rem;
-    width: 100%;
-}
-
-.formcontactuscntctpg button {
-    /* position: absolute;
-    right: 0;
-    bottom: 0; */
-    appearance: none;
-    border: none;
-    outline: none;
-    font-size: 1.1rem;
-    padding: .5rem 1.5rem .5rem 1.5rem;
-    border-radius: 60px;
-    font-weight: 550;
-    color: white;
-    margin: 1.5rem 0 2rem 0;
-    cursor: pointer;
-    transition: all .25s ease;
-    font-family: 'Poppins', sans-serif;
-    opacity: 1;
-    align-self: flex-end;
-    background: rgba(0, 85, 164);
-}
-
-.formcontactuscntctpg button:hover {
-    background: rgba(0, 85, 164, .7);
-}
-
-.ctninptscntctcontactpg {
-    margin: 2rem 0 2rem 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* gap: 2.5rem; */
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.ctnphonezipcodeinpts,
-.ctnnamefirstnamecntctform {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 1.5rem;
-    margin: 2.5rem 0 2.5rem 0;
-}
-
-.inputctncntctus {
-    display: flex;
-    width: 100%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-}
-
-.inputctncntctus input {
-    width: 100%;
-    height: 100%;
-    appearance: none;
-    color: #505050;
-    border: none;
-    padding: 0 0 0 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    border-bottom: 2px solid rgba(0, 85, 164, .8);
-    outline: none;
-}
-
-.inputctncntctus.active label,
-.inputctncntctus input:focus + label {
-    position: absolute;
-    font-size: .8rem;
-    color: rgba(0, 85, 164, .7);
-    top: -.8rem;
-}
-
-.inputctncntctus label {
-    position: absolute;
-    font-size: 1rem;
-    color: rgba(0, 85, 164);
-    left: 0;
-    transition: all .25s ease;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-
-.formerr {
-    position: absolute;
-    font-size: .8rem;
-    color: rgba(239, 65, 53);
-    bottom: -1.2rem;
-    left: 0;
-}
-
-.formerr.politics {
-    position: static;
-    align-self: flex-start;
-    margin: .35rem 0 0 0;
-}
-
-.formerr.dropdown {
-    position: absolute;
-    font-size: .8rem;
-    color: rgba(239, 65, 53);
-}
-
-.formerr.hide.dropdown {
-    opacity: 0;
-}
-
-.ctndropdowntypeofcontact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.dropdownroller {
-    text-align: left;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: rgba(0, 85, 164);
-    text-decoration: underline;
-}
-
-.dropdownroller:hover {
-    text-decoration: underline;
-}
-
-.dropdownroller.active {
-    color: rgba(0, 85, 164, .6);
-    text-decoration: underline;
-}
-
-.dropdownroller.active:hover {
-    color: rgba(0, 85, 164);
-    text-decoration: none;
-}
-
-
-.ctnddownchooseeventtypecntct {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    transition: all .25s ease;
-    justify-content: center;
-    max-height: 0;
-    width: 100%;
-    background-color: white;
-}
-
-.ctnddownchooseeventtypecntct.active {
-    height: auto;
-    max-height: calc(30px * 5);
-    margin: 1rem 0 0 0;
-    padding: 0 0 1rem 0;
-}
-
-.ctnddownchooseeventtypecntct label {
-    z-index: -1;
-    opacity: 0;
-    width: calc(100% - 1rem);
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    cursor: pointer;
-    background-color: white;
-    height: 30px;
-    padding: 0 0 0 1rem;
-    color: rgba(0, 85, 164);
-}
-
-.ctnddownchooseeventtypecntct label:hover {
-    text-decoration: underline;
-    color: rgba(0, 85, 164, .7);
-}
-
-.ctnddownchooseeventtypecntct.active label {
-    z-index: 1;
-    opacity: 1;
-}
-
-.selectedelemddown {
-    width: 100%;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: rgba(0, 85, 164);
-    opacity: 1;
-}
-
-.selectedelemddown.none {
-    opacity: 0;
-}
-
-.ctncgupoliticsaccept {
-    width: 100%;
-    gap: .75rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.ctntextpoliticsformcntctpg {
-    width: 95%;
-    max-width: 95%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-}
-
-.ctntextpoliticsformcntctpg a {
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    text-decoration: underline;
-    color: rgba(0, 85, 164);
-    transition: all .2s ease;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.ctntextpoliticsformcntctpg a:hover {
-    color: rgba(0, 85, 164, .8);
-}
-
-/* END OF CONTACT COMPONENT */
-
 
 input[type="checkbox"]  {
     appearance: none;

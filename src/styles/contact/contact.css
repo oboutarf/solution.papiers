@@ -1,5 +1,4 @@
-/* [CONTAINERS CONTACT CSS VARS] */
-.wrapcontactformpg {
+/* .wrapcontactformpg {
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,10 +29,10 @@
     align-items: flex-start;
     justify-content: flex-start;
     background-color: white;
-}
+} */
 
 /* [TOP CONTACT FORM CSS VARS] */
-.topimgformlogo {
+/* .topimgformlogo {
     width: 150px;
 }
 
@@ -53,9 +52,6 @@
     color: #111111;
     font-size: 1.8rem;
 }
-
-
-/* [FORM CONTACT CSS VARS] */
 .formcontactuscntctpg {
     display: flex;
     position: relative;
@@ -92,7 +88,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* gap: 2.5rem; */
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -138,9 +133,6 @@
 }
 
 .formcontactuscntctpg button {
-    /* position: absolute;
-    right: 0;
-    bottom: 0; */
     appearance: none;
     border: none;
     outline: none;
@@ -273,7 +265,7 @@
 
 .formerr.hide.dropdown {
     opacity: 0;
-}
+} */
 /* 
 .gradient {
     background: linear-gradient(to bottom, transparent, white);
@@ -283,7 +275,7 @@
     height: 100%;
 } */
 
-.ctncgupoliticsaccept {
+/* .ctncgupoliticsaccept {
     width: 100%;
     gap: .75rem;
     display: flex;
@@ -446,4 +438,4 @@ input[type="checkbox"]:checked {
         width: 100%;
     }
         
-}
+} */

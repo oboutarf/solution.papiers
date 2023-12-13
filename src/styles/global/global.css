@@ -10,6 +10,10 @@ html, body {
     overflow-x: hidden;
 }
 
+* {
+    user-select: none;
+}
+
 .redirectwhatsapp {
     display: flex;
     justify-content: center;
