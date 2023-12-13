@@ -47,7 +47,7 @@ export default function Navbar({
                 <a href="/">
                     <img
                         alt=""
-                        src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/solutionpapierlogo-removebg-preview.png"
+                        src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/logo/okq1MGt0.jpg"
                     />
                 </a>
                 <div className="ctnnavredirectslnks">

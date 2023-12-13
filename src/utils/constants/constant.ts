@@ -1,7 +1,7 @@
 
 export const LINKS_NAVBAR = [
     {  
-        text: 'Acceuil',
+        text: 'Accueil',
         link: '/'
     },
     {  

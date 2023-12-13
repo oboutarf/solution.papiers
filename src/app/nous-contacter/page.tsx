@@ -9,5 +9,5 @@ export default function NousContacterPageServer({
 
 })  {
 
-  return (<NousContacter />);
+	return (<NousContacter />);
 };
