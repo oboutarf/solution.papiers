@@ -33,17 +33,17 @@ export const LINKS_SERVICES_HOMEPAGE = [
     {
         text: 'Naturalisation française',
         img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/naturalisationpapierssolution.jpg',
-        link: "/services?key=naturalisation"
+        link: "/services/naturalisation"
     },
     {  
         text: 'Titre de séjour',
         img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/passeportsolutionspapier.jpeg',
-        link: "/services?key=titre-de-sejour"
+        link: "/services/titre-de-sejour"
     },
     {  
         text: 'Recours OQTF',
         img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/nonaloqtfsolutionpapier.jpg',
-        link: "/services?key=oqtf"
+        link: "/services/oqtf"
     }
 ];
 
@@ -52,19 +52,19 @@ export const LINKS_SERVICES_PAGE = [
     {
         title: 'Naturalisation française',
         img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/naturalisationpapierssolution.jpg',
-        link: "/services?key=naturalisation",
+        link: "/services/naturalisation",
         descrpition: "La démarche de naturalisation est le processus par lequel un étranger devient citoyen d'un pays, acquérant ainsi les droits et les responsabilités liés à la nationalité. En général, cela implique la satisfaction de certaines conditions telles que la résidence continue, la maîtrise de la langue, et le respect des lois du pays d'accueil.Notre entreprise spécialisée dans l'accompagnement des personnes rencontrant des difficultés administratives peut jouer un rôle crucial dans ce processus. Nous offrons une assistance complète, depuis la collecte des documents nécessaires jusqu'à la préparation des entretiens. Nos experts guident les individus tout au long de la procédure, s'assurant qu'ils comprennent les exigences spécifiques et les aidant à surmonter les obstacles potentiels."
     },
     {  
         title: 'Titre de séjour',
         img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/passeportsolutionspapier.jpeg',
-        link: "/services?key=titre-de-sejour",
+        link: "/services/titre-de-sejour",
         descrpition: "L'obtention d'un titre de séjour est le processus par lequel un étranger régularise sa présence sur le territoire d'un pays. Cela implique généralement de satisfaire à des conditions telles que la justification de motifs légitimes de séjour, la démonstration de ressources suffisantes, et la conformité aux exigences administratives.Notre entreprise spécialisée dans l'accompagnement des individus confrontés à des problèmes de statut administratif offre une assistance complète. Du rassemblement des documents nécessaires à la préparation des entretiens, nos experts guident les personnes à chaque étape. Nous simplifions le processus et maximisons les chances de succès dans l'obtention du titre de séjour, offrant un soutien personnalisé et une expertise juridique pointue."
     },
     {  
         title: 'Recours OQTF',
         img: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/nonaloqtfsolutionpapier.jpg',
-        link: "/services?key=oqtf",
+        link: "/services/oqtf",
         descrpition: "Notre entreprise est engagée dans la facilitation des démarches administratives pour les individus confrontés à des situations complexes, notamment celles liées au statut de sans-papiers. L'un des défis majeurs auxquels nos clients peuvent être confrontés est l'Obligation de Quitter le Territoire Français (OQTF), une mesure qui nécessite une gestion experte pour assurer une transition en douceur et conforme aux réglementations en vigueur."
     }   
 ];
@@ -120,15 +120,15 @@ export const DROPDOWN_CONTACT_US = [
 
 export const LIST_REDIRECTS_SERVICES = [
     {
-        link: "/services?key=naturalisation",
+        link: "/services/naturalisation",
         text: "Naturalisation française"
     },
     {
-        link: "/services?key=oqtf",
+        link: "/services/oqtf",
         text: "Recours OQTF"
     },
     {
-        link: "/services?key=titre-de-sejour",
+        link: "/services/titre-de-sejour",
         text: "Titre de séjour"
     }
 ];
