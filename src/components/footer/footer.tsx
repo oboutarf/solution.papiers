@@ -18,19 +18,12 @@ export default function Footer({
 
     return (
         <footer className="mainctnfooterwrp">
+            <img
+                className="logofooter"
+                alt=""
+                src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/logo/okq1MGt0.jpg"
+            />
             <div className="wrpfootercntnt">
-                <div className="ctnaproposfooter">
-                    <h3>A PROPOS</h3>
-                    <div className="ctncntntaproposfooter">
-                        <span className="cntntapropostxt">Simplifiez vos démarches administratives, pour l’obtention de la nationalité française ou d’un titre de séjour. Nos spécialistes vous conseillent et vous guident, prenez dès maintenant rendez-vous avec l’un d’entre eux.</span>
-                        <a
-                            href="/contact"
-                            className="cntctusfooter"
-                        >
-                            Nous contacter
-                        </a>
-                    </div>
-                </div>
                 <div className="ctnanosservicesfooter">
                     <h3>NOS SERVICES</h3>
                     <div className="ctncntntnsoservicesfooter">
@@ -51,17 +44,17 @@ export default function Footer({
                         Pl. de l'Hôtel de Ville<br/>75004 Paris, France
                        </span>
                        <div className="ctncontactinfofooter">
-                            <img
+                            {/* <img
                                 alt=""
                                 src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/lucidephoneicon.svg"
-                            />
+                            /> */}
                             <span>+33 1 23 74 23 12</span>
                        </div>
                        <div className="ctncontactinfofooter">
-                            <img
+                            {/* <img
                                 alt=""
                                 src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/lucidemailicon.svg"
-                            />
+                            /> */}
                             <span>contact@solution-papiers.fr</span>
                        </div>
                     </div>

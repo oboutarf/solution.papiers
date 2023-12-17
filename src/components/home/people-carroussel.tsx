@@ -19,15 +19,15 @@ export default function PeopleCarroussel({
             if (action) {
                 if (carrousselIndex === 5)
                     return (setCarrousselControl(0), setCarrousselIndex(0));
-                carroussel.style.transform = `translateX(${carrousselControl - 60}%)`;
-                setCarrousselControl(carrousselControl - 60);
+                carroussel.style.transform = `translateX(${carrousselControl - 70}%)`;
+                setCarrousselControl(carrousselControl - 70);
                 setCarrousselIndex(carrousselIndex + 1);
             }
             else {
                 if (!carrousselIndex)
                     return;
-                carroussel.style.transform = `translateX(${carrousselControl + 60}%)`;
-                setCarrousselControl(carrousselControl + 60);
+                carroussel.style.transform = `translateX(${carrousselControl + 70}%)`;
+                setCarrousselControl(carrousselControl + 70);
                 setCarrousselIndex(carrousselIndex - 1);
             }
         }
@@ -40,7 +40,7 @@ export default function PeopleCarroussel({
             if (carroussel) {
                 console.log({carrousselControl})
                 carroussel.style.transform = `translateX(${carrousselControl}%)`;
-                setCarrousselControl(carrousselControl - 60);
+                setCarrousselControl(carrousselControl - 70);
                 setCarrousselIndex(carrousselIndex + 1);
                 if (carrousselIndex === 5)
                     return (setCarrousselControl(0), setCarrousselIndex(0));
@@ -55,11 +55,21 @@ export default function PeopleCarroussel({
 
     return (
         <div className="peoplecarrousselhmpg">
+            <div className="ctnttlcarrousselhmpg">
+                <img
+                    alt=""
+                    src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/staryellowsvg.svg"
+                />
+                <h4>Ils nous ont fait confiance!</h4>
+            </div>
             <div className="ctncrslhmpgscroll">
             { PERSONNES_HISTOIRES_HOMEPAGE.map((person, idx) => (
                 <div className="ctnpeoplehistorycntnt">
                     <div className="ctnpeoplenamehsitory">
-                        <h4>{person.name}</h4>
+                        <div className="ctnpersontitle">
+                            <h4>{person.name}</h4>
+                            <label>{person.age_and_profession}</label>
+                        </div>
                         <span>{person.histoire}</span>
                     </div>
                     <img

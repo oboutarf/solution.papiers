@@ -4,18 +4,16 @@ import { DROPDOWN_CONTACT_US } from '@/utils/constants/constant';
 import '@/styles/contact/contact-form.css';
 
 export default function ContactForm({
-    switchColors
+    className
 }: {
-    switchColors: boolean
+    className: string
 }) {
-    const [swicth, setSwitch] = useState(switchColors)
     const [openDropDown, setopenDropDown] = useState<boolean>(false);
     const [formContactUs, setFormContactUs] = useState({
         first_name: '',
         last_name: '',
         email: '',
         phone: '',
-        zip_code: '',
         typeRDV: '',
         politics: false
     });
@@ -24,7 +22,6 @@ export default function ContactForm({
         last_name: '',
         email: '',
         phone: '',
-        zip_code: '',
         typeRDV: '',
         politics: true
     });
@@ -36,7 +33,7 @@ export default function ContactForm({
     return (
         <form
             onSubmit={(e) => handleSubmit(e)}
-            className={`formcontactuscntctpg`}
+            className={`formcontactuscntctpg ${className}`}
         >
             <h3>Entrez vos informations. Nos équipes vous contacteront dans un délai maximum de 48h.</h3>
             <div className={`ctninptscntctcontactpg`}>
@@ -96,19 +93,6 @@ export default function ContactForm({
                             : null
                         }
                     </div>
-                    <div className={`inputctncntctus${formContactUs.zip_code.length ? ' active' : ''}`}>
-                        <input value={formContactUs.zip_code} onChange={(e) => {
-                            setFormContactUs(prev => ({
-                                ...prev,
-                                zip_code: e.target.value
-                            }))
-                        }} type="text" />
-                        <label>Code postal*</label>
-                        {formContactUsErr.zip_code.length ?
-                            <span className="formerr">{formContactUsErr.zip_code}</span>
-                            : null
-                        }
-                    </div>
                 </div>
                 <div className="ctndropdowntypeofcontact">
                     {formContactUsErr.typeRDV.length ?
@@ -164,7 +148,7 @@ export default function ContactForm({
                     de Solution Papiers
                 </span>
             </div>
-            { formContactUsErr.politics ?
+            { !formContactUsErr.politics ?
                 <span className="formerr politics">{'Veuillez cocher cette case avant de continuer.'}</span>
                 : 
                 null

@@ -3,6 +3,7 @@
     max-width: calc(100%);
     position: relative;
     display: flex;
+    background-color: rgba(0, 85, 164, .6);
     align-items: center;
     justify-content: flex-start;
     margin: 3.5rem 0 5rem 0;
@@ -13,9 +14,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 0 0 5%;
+    padding: 4rem 0 4rem 5%;
     width: calc(100% - 5%);
-    gap: 10%;
+    gap: 7.5%;
     transition: all 1s ease;
     max-width: calc(100% - 5%);
     justify-content: flex-start;
@@ -26,27 +27,82 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    width: 60%;
-    min-width: 60%;
+    width: 70%;
+    min-width: 70%;
     gap: 2.5rem;
+}
+
+.ctnttlcarrousselhmpg {
+    position: absolute;
+    color: rgba(0, 85, 164);
+    top: -2.5rem;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    padding: 1rem 2rem 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    box-shadow:
+        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    justify-content: flex-start;
+    background-color: rgba(0, 85, 164);
+
+}
+
+.ctnttlcarrousselhmpg h4 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 0 0 0;
+}
+
+.ctnttlcarrousselhmpg img {
+    width: 40px;
 }
 
 .ctnpeoplenamehsitory {
     padding: 1.5rem;
     background-color: rgba(0, 85, 164);
     color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 20px;
 }
 
-.ctnpeoplenamehsitory h4 {
-    font-size: 1.35rem;
-    font-weight: 900;
-    margin: 0 0 .35rem 0;
-    text-decoration: underline;
+.ctnpeoplenamehsitory span {
+    font-size: .95rem;
+    font-weight: 350;
+}
+
+.ctnpersontitle h4 {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}   
+
+.ctnpersontitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .15rem;
+    margin: 0 0 .5rem 0;
+    justify-content: flex-start;
+}
+
+.ctnpersontitle label {
+    margin: 0 0 0 0;
+    color: white;
+    font-weight: 550;
+    font-size: 1.1rem;
+    text-decoration: none;
 }
 
 .imgpersoncarroussel {
-    width: 200px;
+    width: 170px;
 }
 
 .ctncarrousselswitchershmpg {
@@ -56,7 +112,7 @@
     justify-content: center;
     gap: 1rem;
     position: absolute;
-    bottom: 0;
+    top: -1.5rem;
     right: 5%;
 }
 
@@ -83,4 +139,9 @@
 
 .ctnswitchcrsl:hover {
     background-color: rgba(0, 85, 164, .8);
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1200px)   {
+
 }
