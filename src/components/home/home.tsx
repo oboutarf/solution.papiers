@@ -70,7 +70,9 @@ export default function Home({
             ))}
             </div>
             <div className="ctnservicestxtexplhmpg">
-                <a>
+                <a
+                    href="/services"
+                >
                     Découvrez nos services
                 </a>
             </div>

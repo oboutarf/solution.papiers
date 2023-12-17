@@ -30,8 +30,6 @@
 .ctnaddrfootercontactus {
     color: rgba(0, 85, 164);
     font-weight: 350;
-    width: 300px;
-    max-width: 300px;
     font-size: .9rem;
 }
 
@@ -89,7 +87,7 @@
 
 .logofooter {
     position: absolute;
-    width: 150px;
+    width: 115px;
     top: 2rem;
     right: 3.5%;
 }
@@ -100,11 +98,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     background-color: white;
-    border: 1px solid rgba(0, 85, 164, .8);
     border-radius: 15px;
-    box-shadow:
-        rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .ctntxtnewsletterftr {
@@ -112,8 +106,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: .75rem 1.5rem .75rem 1.5rem;
+    padding: 0 0 0 0;
 }
+
 .ctntxtnewsletterftr {
     display: flex;
     flex-direction: column;
@@ -160,6 +155,14 @@
     border-radius: 5px;
 }
 
+.ctnfooterservicesetc {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.5rem;
+}
+
 .btnfooternewsletter {
     font-size: 1rem;
     font-weight: 500;
@@ -179,3 +182,50 @@
     background: rgba(0, 85, 164, .8);
 }
 
+@media screen and (min-width: 0px) and (max-width: 1150px) { 
+    .ctnfooterservicesetc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+    .wrpfootercntnt {
+        width: calc(100%);
+        display: flex;
+        gap: 3rem;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2rem 0 0 0;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+    .ctnanosservicesfooter {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .logofooter {
+        display: none;
+    }
+    .ctncntntcontactusfooter,
+    .ctncntntnsoservicesfooter {
+        margin: .5rem 0 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ctncontactusfooter {
+        width: 100%;
+    }
+    .ctncontactusfooter h3 {    
+        text-align: center;
+    }
+    
+}
