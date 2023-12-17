@@ -22,7 +22,7 @@ export default function NousContacter({
             <div className="wrpcontactform">
                 <div className="ctncontactformpg">
                     <ContactForm
-                        switchColors={false}
+                        className={''}
                     />
                 </div>
             </div>
