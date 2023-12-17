@@ -11,6 +11,7 @@ export default function PeopleCarroussel({
 
 })  {
     const [carrousselControl, setCarrousselControl] = useState<number>(0);
+    const [carrousselIncrem, setCarrousselIncrem] = useState<number>(0);
     const [carrousselIndex, setCarrousselIndex] = useState<number>(0);
 
     const switchCarroussel = (action: number) => {
@@ -19,28 +20,38 @@ export default function PeopleCarroussel({
             if (action) {
                 if (carrousselIndex === 5)
                     return (setCarrousselControl(0), setCarrousselIndex(0));
-                carroussel.style.transform = `translateX(${carrousselControl - 70}%)`;
-                setCarrousselControl(carrousselControl - 70);
+                carroussel.style.transform = `translateX(${carrousselControl - carrousselIncrem}%)`;
+                setCarrousselControl(carrousselControl - carrousselIncrem);
                 setCarrousselIndex(carrousselIndex + 1);
             }
             else {
                 if (!carrousselIndex)
                     return;
-                carroussel.style.transform = `translateX(${carrousselControl + 70}%)`;
-                setCarrousselControl(carrousselControl + 70);
+                carroussel.style.transform = `translateX(${carrousselControl + carrousselIncrem}%)`;
+                setCarrousselControl(carrousselControl + carrousselIncrem);
                 setCarrousselIndex(carrousselIndex - 1);
             }
         }
     };
 
     useEffect(() => {
+        
+        if (window.innerWidth >= 1200)
+            setCarrousselIncrem(70);
+        else if (window.innerWidth < 1200 && window.innerWidth > 1000)
+            setCarrousselIncrem(80);
+        else if (window.innerWidth < 1000)
+            setCarrousselIncrem(90);
+
+    }, []);
+
+    useEffect(() => {
 
         const scrollCarrousselPeople = () => {
             const carroussel = document.querySelector('.ctncrslhmpgscroll') as HTMLDivElement;
             if (carroussel) {
-                console.log({carrousselControl})
                 carroussel.style.transform = `translateX(${carrousselControl}%)`;
-                setCarrousselControl(carrousselControl - 70);
+                setCarrousselControl(carrousselControl - (carrousselIncrem));
                 setCarrousselIndex(carrousselIndex + 1);
                 if (carrousselIndex === 5)
                     return (setCarrousselControl(0), setCarrousselIndex(0));

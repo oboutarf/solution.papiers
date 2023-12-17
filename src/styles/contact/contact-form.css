@@ -28,9 +28,6 @@
 }
 
 .formcontactuscntctpg button {
-    /* position: absolute;
-    right: 0;
-    bottom: 0; */
     appearance: none;
     border: none;
     outline: none;
@@ -259,3 +256,46 @@
 .ctntextpoliticsformcntctpg a:hover {
     color: rgba(0, 85, 164, .8);
 }
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .formcontactuscntctpg.home {
+        box-shadow: none;
+        padding: 0 0 0 0;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .formcontactuscntctpg.home {
+        box-shadow: none;
+        padding: 0 0 0 0;
+        width: 90%;
+    }
+    .formcontactuscntctpg h3 {
+        font-weight: 550;
+        color: rgba(0, 85, 164);
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .ctnnamefirstnamecntctform {
+        flex-direction: column;
+        width: 100%;
+        gap: 2.5rem;
+        margin: 1rem 0 2.5rem 0;
+    }
+    .ctntextpoliticsformcntctpg {
+        font-size: .9rem;
+    }
+    .ctntextpoliticsformcntctpg a {
+        font-size: .9rem;
+    }
+    .formcontactuscntctpg.home button {
+        font-size: 1rem;
+        margin: 1.5rem 0 2rem 0;
+        align-self: center;
+    }
+    .dropdownroller {
+        text-align: center;
+    }
+}
+
