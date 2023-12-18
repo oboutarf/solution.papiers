@@ -10,8 +10,6 @@ import ContactForm from '@/components/contact/contact-form';
 
 import '@/styles/contact/nous-contacter.css';
 
-// import '@/styles/contact/contact.css';
-
 export default function NousContacter({
 
 }: {
@@ -22,7 +20,7 @@ export default function NousContacter({
             <div className="wrpcontactform">
                 <div className="ctncontactformpg">
                     <ContactForm
-                        className={''}
+                        className={'contact'}
                     />
                 </div>
             </div>

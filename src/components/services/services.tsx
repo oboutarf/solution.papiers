@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 import '@/styles/services/services.css';
-import { LINKS_SERVICES_PAGE, DROPDOWN_CONTACT_US } from '@/utils/constants/constant';
+import { LINKS_SERVICES_PAGE } from '@/utils/constants/constant';
 
 export default function Services({
 

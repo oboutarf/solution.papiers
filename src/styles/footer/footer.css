@@ -192,18 +192,6 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 550px) {
-    .wrpfootercntnt {
-        width: calc(100%);
-        display: flex;
-        gap: 3rem;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 2rem 0 0 0;
-    }
-}
-
 @media screen and (min-width: 0px) and (max-width: 450px) {
     .ctnanosservicesfooter {
         width: 100%;
@@ -226,6 +214,15 @@
     }
     .ctncontactusfooter h3 {    
         text-align: center;
+    }
+    .wrpfootercntnt {
+        width: calc(100%);
+        display: flex;
+        gap: 3rem;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2rem 0 0 0;
     }
     
 }

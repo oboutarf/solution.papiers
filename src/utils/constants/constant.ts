@@ -8,10 +8,10 @@ export const LINKS_NAVBAR = [
         text: 'Nos services',
         link: '/services'
     },
-    {  
-        text: 'Qui sommes-nous?',
-        link: '/qui-sommes-nous'
-    }
+    // {  
+    //     text: 'Qui sommes-nous?',
+    //     link: '/qui-sommes-nous'
+    // }
 ];
 
 export const HOMEPAGE_WHO_WE_ARE = [
@@ -136,3 +136,27 @@ export const LIST_REDIRECTS_SERVICES = [
 export const EMAIL_VALIDATOR = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 export const PHONE_VALIDATOR = /^\+?\d{5,15}$/;
+
+export const SERVICES_PAGES_PROVIDE_CONTENT = [
+    {
+        title: 'Recours OQTF (Obligation Quitter Territoire Français)',
+        sub_title: 'Accompagnement expert pour surmonter les défis administratifs',
+        explanation_text: "Notre entreprise est dévouée à apporter son soutien aux migrants en situation irrégulière, notamment face aux Obligations de Quitter le Territoire Français (OQTF). Notre approche holistique vise à accompagner ces individus à travers des démarches souvent complexes et délicates.</br> Le processus débute par une évaluation minutieuse de la situation administrative et juridique de chaque personne concernée. En collaboration étroite avec nos équipes spécialisées composées d'experts en droit de l'immigration et de conseillers juridiques, nous élaborons des stratégies sur mesure pour contester ou régulariser la situation.</br> Notre engagement envers la dignité et les droits de chaque individu se reflète dans notre approche tout-en-un. Nous offrons un soutien administratif rigoureux, des conseils juridiques éclairés et un suivi émotionnel attentif pour faciliter le processus et assurer une transition vers un avenir plus stable et inclusif.En collaborant étroitement avec nos équipes dévouées, notre objectif est d'offrir des solutions concrètes aux migrants confrontés aux OQTF. Nous sommes convaincus que chaque personne mérite une chance de surmonter les obstacles administratifs, et nous nous engageons à contribuer activement à leur bien-être en facilitant ce processus souvent difficile. Ensemble, nous œuvrons pour créer des opportunités d'intégration et favoriser un avenir plus prometteur pour ceux qui cherchent à reconstruire leur vie en dépit des défis administratifs auxquels ils font face.",
+        background_main_image: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/cache_61794195.png',
+        background_sub_image: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/Depositphotos_227028528_xl-2015-1600x1068.jpg'
+    },
+    {
+        title: 'Naturalisation Française',
+        sub_title: 'Ensemble vers une nouvelle citoyenneté',
+        explanation_text: "Notre entreprise s'engage à accompagner les migrants en situation irrégulière dans leur démarche d'obtention de la naturalisation française. <br/>Le processus débute par la soumission d'une demande à la préfecture, comprenant des pièces d'identité et des preuves de résidence.<br/> Les critères principaux incluent une résidence régulière d'au moins cinq ans, la maîtrise du français, et une intégration sociale. Nous facilitons cette procédure complexe en offrant un soutien administratif, juridique, et émotionnel, afin de favoriser l'inclusion rapide et harmonieuse de ces individus dans la société française.",
+        background_main_image: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/1600x580-paris-3.avif',
+        background_sub_image: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/Photo-portrait-professionnel-avocat.jpg'
+    },
+    {
+        title: 'Obtention ou renouvellement Titre de séjour',
+        sub_title: 'Votre passerelle vers une vie légale et inclusive',
+        explanation_text: "Notre entreprise s'investit activement dans l'assistance aux migrants en situation irrégulière pour l'obtention ou le renouvellement de leur titre de séjour en France. Nous comprenons les défis auxquels sont confrontés ces individus et nous nous efforçons de simplifier ce processus souvent complexe.</br>Le parcours débute par une évaluation approfondie de la situation administrative de chaque personne concernée. Nos équipes dédiées, composées d'experts en droit de l'immigration et de conseillers administratifs, travaillent en étroite collaboration pour élaborer des stratégies personnalisées. Nous veillons à ce que chaque étape soit gérée de manière professionnelle, garantissant ainsi une procédure transparente et efficiente.</br>Notre engagement envers l'inclusion sociale se manifeste à travers un soutien continu. Nous offrons une assistance administrative complète, des conseils juridiques avisés et une présence attentive pour répondre aux besoins émotionnels des individus. Nous croyons que chaque personne mérite la possibilité de régulariser sa situation et de contribuer positivement à la société française.</br>En collaborant avec notre équipe engagée, nous visons à créer des opportunités durables pour les migrants en situation irrégulière, en leur offrant la possibilité d'obtenir ou de renouveler leur titre de séjour. Notre objectif ultime est de favoriser une intégration harmonieuse dans la société française, contribuant ainsi à la construction d'un avenir stable et inclusif pour tous.",
+        background_main_image: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/rubrique.jpg',
+        background_sub_image: 'https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/image_services/contenttitredesejour.jpeg'
+    }
+];

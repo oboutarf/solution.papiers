@@ -13,6 +13,7 @@ export default function Calendly({
             styles={{
                 minWidth: '100%',
                 height: '750px',
+                minHeight: '1000px',
                 margin: '0 0 5rem 0',
                 display: 'flex',
                 justifyContent: 'center',

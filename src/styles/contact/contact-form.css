@@ -257,6 +257,36 @@
     color: rgba(0, 85, 164, .8);
 }
 
+/* [CONTACT PAGE] */
+@media screen and (min-width: 900px) and (max-width: 1050px) {
+    .formcontactuscntctpg h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .formcontactuscntctpg.contact {
+        box-shadow: unset;
+        padding: 0 0 0 0;
+        width: 100%;
+    }
+    .formcontactuscntctpg.contact h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .formcontactuscntctpg.contact {
+        box-shadow: unset;
+        padding: 0 0 0 0;
+        width: 100%;
+    }
+    .formcontactuscntctpg.contact h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* [HOME PAGE] */
 @media screen and (min-width: 600px) and (max-width: 1000px) {
     .formcontactuscntctpg.home {
         box-shadow: none;

@@ -18,9 +18,6 @@
     background-color:rgba(0, 85, 164);
     position: relative;
     width: 100%;
-    /* height: calc(500px - 20rem);
-    padding: 10rem;
-    width: calc(100% - 20rem); */
     height: 650px;
     display: flex;
     justify-content: center;
@@ -302,23 +299,27 @@ input[type="checkbox"]:checked {
     .wraphomepg {
         margin: 80px 0 0 0;
     }
+    .wrpttlhmpgmain {
+        display: flex;
+        position: static;
+        width: calc(95% - 2.5%);
+        padding: 2.5rem 0 2.5rem 2.5%;
+    }
     .wrpttlhmpgmain h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .wrpttlhmpgmain h1 {
         max-width: 100%;
     }
-    .wrpttlhmpgmain {
-        display: flex;
-        position: static;
-        padding: 2.5rem 0 2.5rem 10%;
+    .hmpgctniconswhoweare {
+        margin: 1rem 0 .75rem 0;
     }
     .mainhmpgimg {
         display: none;
     }
     .ctnhmpgmaintxt h1 {
         max-width: 80%;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         text-align: center;
     }
     .mainbghomepage {
@@ -327,8 +328,8 @@ input[type="checkbox"]:checked {
     .ctnhmpgmaintxt h3 {
         font-size: 1rem;
         text-align: center;
+        margin: 1rem 0 0 0;
     }
-
     .mainhmpgservices {
         display: flex;
         flex-direction: column;
@@ -347,5 +348,45 @@ input[type="checkbox"]:checked {
         color: white;
         font-weight: 550;
         font-size: 1.35rem;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .fieldiconwhoweare {
+        gap: .5rem;
+    }
+    .fieldiconwhoweare img {
+        width: 25px;
+    }
+    .fieldiconwhoweare span {
+        font-size: 1rem;
+    }
+    .mainhomepagebtnrdctn {
+        font-size: 1.1rem;
+        font-weight: 450;
+        margin: .5rem 0 0 0;
+        padding: .25rem 1rem .25rem 1.25rem;
+    }
+    .ctnhmpgmaintxt h1 {
+        max-width: 90%;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .ctnhmpgmaintxt h3 {
+        max-width: 90%;
+    }
+    .mainhmpgservices {
+        width: 90%;
+    }
+    .ctntxtnosserviceshmpg span {
+        font-weight: 450;
+        font-size: 1.15rem;
+    }
+    .ctntxtnosserviceshmpg {
+        height: calc(25% - 2rem);
+    }
+    .ctnservicestxtexplhmpg a {
+        font-size: 1rem;
     }
 }

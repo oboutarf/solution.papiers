@@ -239,3 +239,54 @@
         margin: 80px 0 5rem 0;
     }
 }
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .ctnmainttlbgnosservicespg h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .ctnmainttlbgnosservicespg h2 {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .ctnmainttlbgnosservicespg h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .ctnmainttlbgnosservicespg h2 {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    .wrpservicettltxt h3 {
+        font-size: 1.35rem;
+    }
+    .wrpservicettltxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrpservicettltxt span {
+        font-size: 1rem;
+        text-align: center;
+        font-size: .9rem;
+    }
+    .wrpservicesimgrdrct {
+        height: 300px;
+        min-height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: center;
+    }
+    .wrpsrvcspgimg {
+        height: 300px;
+    }
+
+}
