@@ -39,8 +39,24 @@ export default function Navbar({
         //   document.body.removeChild(rootElem);
         // };
 
-      }, []);
-    
+    }, []);
+
+
+    const manageMenuDropDown = () => {
+        if (menuDropDown)   {
+            const menu = document.getElementById('menu_dropdown');
+            if (menu)   {
+                menu.classList.add('close');
+                setTimeout(() => {
+                    menu.classList.remove('close');
+                    setMenuDropDown(!menuDropDown);
+                }, 600);
+            }
+        }
+        else {
+            setMenuDropDown(true);
+        }
+    };
 
     return (
         <nav className={`wrapnavbarctn`}>
@@ -79,7 +95,7 @@ export default function Navbar({
             <div className="wrpnavcntntresponsive">
                 <img
                     className="hamburgermenunavmbl"
-                    onClick={() => setMenuDropDown(!menuDropDown)}
+                    onClick={() => manageMenuDropDown()}
                     src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/hamburgermenusvg.svg" 
                 />
                 <a href="/">
@@ -90,7 +106,10 @@ export default function Navbar({
                     />
                 </a>
             </div>
-            <div className={`ctnmenudropdownnavrspnsv${menuDropDown ? ' active' : ''}`}>
+            <div
+                id="menu_dropdown"
+                className={`ctnmenudropdownnavrspnsv${menuDropDown ? ' active' : ''}`}
+            >
                 <div className="ctnnavredirectslnks">
                 {LINKS_NAVBAR.map((link, idx) => (
                     <a

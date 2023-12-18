@@ -185,6 +185,9 @@
         background-color: white;
         left: 0;
     }
+    .ctnmenudropdownnavrspnsv.active.close {
+        animation: slideOut .6s forwards;
+    }
     .ctnnavredirectslnks {
         flex-direction: column;
         width: 100%;
@@ -226,5 +229,14 @@
     }
     100% {
         transform: translateX(0px);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
