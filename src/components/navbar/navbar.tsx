@@ -86,27 +86,36 @@ export default function Navbar({
     return (
         <nav className={`wrapnavbarctn`}>
             <div className="ctntopbarinfosnav">
-                <div className="ctnflashinfo">
+                <a
+                    href="/nous-contacter"
+                    className="ctnflashinfo"
+                >
                     <img
                         alt=""
                         src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/svgclockwhite.svg"
                     />
                     <span>Lun-Sam de 10h à 18h</span>
-                </div>
-                <div className="ctnflashinfo">
+                </a>
+                <a
+                    href="https://wa.me/+33123742312"
+                    className="ctnflashinfo"
+                >
                     <img
                         alt=""
                         src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/svgphonewhite.svg"
                     />
                     <span>+33 1 23 74 23 12</span>
-                </div>
-                <div className="ctnflashinfo">
+                </a>
+                <a
+                    href="mailto:contact@solution-papiers.fr"
+                    className="ctnflashinfo"
+                >
                     <img
                         alt=""
                         src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/svgmailwhite.svg"
                     />
                     <span>contact@solution-papiers.fr</span>
-                </div>
+                </a>
 		    </div>
             <div className="wrpnavbarcntnt">
                 <a href="/">
