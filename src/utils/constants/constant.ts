@@ -111,7 +111,6 @@ export const PERSONNES_HISTOIRES_HOMEPAGE = [
 
 
 export const DROPDOWN_CONTACT_US = [
-    "VISA",
     "Recours OQTF",
     "Titre de séjour",
     "Renouvellement de titre de séjour",

@@ -26,7 +26,7 @@ export default function Footer({
             <div className="wrpfootercntnt">
                 <div className="ctnfooterservicesetc">
                     <div className="ctnanosservicesfooter">
-                        <h3>NOS SERVICES</h3>
+                        <a className="ttlnoserviceslnk" href="/services">NOS SERVICES</a>
                         <div className="ctncntntnsoservicesfooter">
                             {LIST_REDIRECTS_SERVICES.map((redirect, idx) => (
                                 <a
@@ -39,7 +39,7 @@ export default function Footer({
                         </div>
                     </div>
                     <div className="ctncontactusfooter">
-                        <h3>NOUS CONTACTER</h3>
+                        <a href="/nous-contacter">NOUS CONTACTER</a>
                         <div className="ctncntntcontactusfooter">
                         <span className="ctnaddrfootercontactus">
                             Pl. de l'Hôtel de Ville<br/>75004 Paris, France
