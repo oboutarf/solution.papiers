@@ -60,11 +60,11 @@ export default function MultiServiceReceptacle({
 					<span id="explanation_text"></span>
 					<div className="ctnservicesnaturalisationicns">
 						<div className="naturalisationicns">
-							<img src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/svgfolderheart%20(1).svg" />
+							<img src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/svgfolderheart%20(2).svg" />
 							<span>La satisfaction de nos clients guide nos actions.</span>	
 						</div>
 						<div className="naturalisationicns">
-							<img src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/svgexperticon%20(1).svg" />
+							<img src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/svgexperticon%20(2).svg" />
 							<span>Des résultats rapides grâce à nos experts juridiques.</span>
 						</div>
 					</div>
@@ -74,7 +74,7 @@ export default function MultiServiceReceptacle({
 				<h3>Prenez rendez-vous avec nos experts</h3>
 				<img
 					alt=""
-					src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/calendarsvgicon%20(1).svg"
+					src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/calendarsvgicon%20(2).svg"
 				/>
 			</div>
 			<Calendly />

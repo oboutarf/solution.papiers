@@ -3,7 +3,7 @@
     max-width: calc(100%);
     position: relative;
     display: flex;
-    background-color: rgba(0, 85, 164, .6);
+    background-color:  rgba(239, 65, 53);
     align-items: center;
     justify-content: flex-start;
     margin: 3.5rem 0 5rem 0;
@@ -34,7 +34,7 @@
 
 .ctnttlcarrousselhmpg {
     position: absolute;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     top: -2.5rem;
     border-bottom-right-radius: 60px;
     border-top-right-radius: 60px;
@@ -47,7 +47,7 @@
         rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
         rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     justify-content: flex-start;
-    background-color: rgba(0, 85, 164);
+    background-color: #001d6e;
 
 }
 
@@ -63,7 +63,7 @@
 
 .ctnpeoplenamehsitory {
     padding: 1.5rem;
-    background-color: rgba(0, 85, 164);
+    background-color: #001d6e;
     color: white;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 20px;
@@ -127,7 +127,7 @@
 
 .ctnswitchcrsl {
     padding: .5rem;
-    background-color: rgba(0, 85, 164);
+    background-color: #001d6e;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -175,7 +175,7 @@
             rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
             rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         justify-content: flex-start;
-        background-color: rgba(0, 85, 164);
+        background-color: #001d6e;
     }
     .ctnttlcarrousselhmpg h4 {
         font-size: 1.25rem;
@@ -204,7 +204,7 @@
 @media screen and (min-width: 0px) and (max-width: 600px)   {
     .ctnpeoplenamehsitory {
         padding: 1.5rem;
-        background-color: rgba(0, 85, 164);
+        background-color: #001d6e;
         color: white;
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         border-radius: 20px;

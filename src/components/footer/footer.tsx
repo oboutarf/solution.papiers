@@ -45,37 +45,21 @@ export default function Footer({
                             Pl. de l'Hôtel de Ville<br/>75004 Paris, France
                         </span>
                         <div className="ctncontactinfofooter">
-                                {/* <img
-                                    alt=""
-                                    src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/lucidephoneicon.svg"
-                                /> */}
-                                <span>+33 1 23 74 23 12</span>
+                            <a
+                                target="_blank"
+                                href="https://wa.me/+33123742312"
+                            >
+                                +33 1 23 74 23 12
+                            </a>
                         </div>
                         <div className="ctncontactinfofooter">
-                                {/* <img
-                                    alt=""
-                                    src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/lucidemailicon.svg"
-                                /> */}
-                                <span>contact@solution-papiers.fr</span>
+                            <a
+                                target="_blank"
+                                href="mailto:contact@solution-papiers.fr"
+                            >
+                                contact@solution-papiers.fr
+                            </a>
                         </div>
-                        </div>
-                    </div>
-                    <div className="ctnnewsletterfooter">
-                        <div className="ctntxtnewsletterftr">
-                            <h3>S'abonner à la newsletter</h3>
-                            <span className="subtxtfooter">Restez informé de toute l’actualité des différentes démarches !</span>
-                            <div className="ctninptnewsletterftr">
-                                <label className="indicinputlblfooter">
-                                    Adresse email
-                                </label>
-                                <input
-                                    type="text"
-                                    className="inputnewsletter"
-                                />
-                                <button className="btnfooternewsletter">
-                                    S'abonner
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>

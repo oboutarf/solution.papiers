@@ -2,7 +2,7 @@
     width: 100%;
     background-color: white;
     padding: 0 0 5rem 0;
-    border-top: 2px solid rgba(0, 85, 164);
+    border-top: 2px solid #001d6e;
     z-index: 999;
     position: relative;
     font-family: 'Poppins', sans-serif;
@@ -21,14 +21,14 @@
 .ctncontactusfooter h3,
 .ctnanosservicesfooter h3 {
     font-size: 1rem;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     margin: 0 0 0 0;
 }
 
 .ctnaddrfootercontactus {
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     font-weight: 350;
     font-size: .9rem;
 }
@@ -37,16 +37,21 @@
     margin: 0 0 .5rem 0;
 }
 
-.ctncontactinfofooter span,
+.ctncontactinfofooter a,
 .ctnservicestxtfooter {
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     font-weight: 350;
-    text-decoration: none;  
+    text-decoration: none;
     font-size: .95rem;    
 }
 
-.ctncontactinfofooter span {
+.ctncontactinfofooter a {
     font-weight: 450;
+    cursor: pointer;
+}
+
+.ctncontactinfofooter a:hover {
+    text-decoration: underline;
 }
 
 .ctnservicestxtfooter:hover {
@@ -92,69 +97,6 @@
     right: 3.5%;
 }
 
-.ctnnewsletterfooter {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: white;
-    border-radius: 15px;
-}
-
-.ctntxtnewsletterftr {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 0 0 0;
-}
-
-.ctntxtnewsletterftr {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.ctntxtnewsletterftr h3 {
-    color: rgba(0, 85, 164);
-    margin: 0 0 0 0;
-    font-size: 1rem;
-    font-weight: 550;
-}
-
-.subtxtfooter {
-    font-size: .8rem;
-    color: rgba(0, 85, 164);
-    font-weight: 350;
-    max-width: 250px;
-}
-
-.ctninptnewsletterftr {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 300px;
-    margin: .5rem 0 .5rem 0;
-}
-
-.indicinputlblfooter {
-    font-weight: 450;
-    font-size: .85rem;
-    color: rgba(0, 85, 164);
-}
-
-.inputnewsletter {
-    height: 27px;
-    appearance: none;
-    outline: none;
-    border: 1px solid rgba(0, 85, 164, .8);
-    width: calc(100% - 2rem);
-    padding: 0 1rem 0 1rem;
-    border-radius: 5px;
-}
-
 .ctnfooterservicesetc {
     display: flex;
     flex-direction: row;
@@ -163,26 +105,7 @@
     gap: 2.5rem;
 }
 
-.btnfooternewsletter {
-    font-size: 1rem;
-    font-weight: 500;
-    color: white;
-    background: rgba(0, 85, 164);
-    font-family: inherit;
-    align-self: flex-end;
-    margin: 1rem 0 0 0;
-    padding: .25rem 1.5rem .25rem 1.5rem;
-    border-radius: 60px;
-    cursor: pointer;
-    transition: all .25s ease;
-    border: none;
-}
-
-.btnfooternewsletter:hover {
-    background: rgba(0, 85, 164, .8);
-}
-
-@media screen and (min-width: 0px) and (max-width: 1150px) { 
+@media screen and (min-width: 0px) and (max-width: 750px) { 
     .ctnfooterservicesetc {
         display: flex;
         flex-direction: column;

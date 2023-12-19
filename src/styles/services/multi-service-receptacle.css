@@ -1,6 +1,6 @@
 .ctnservicesinglepage {
     display: flex;
-    margin: 100px 0 0 0;
+    margin: 135px 0 0 0;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -49,7 +49,7 @@
 }
 
 .ctnmainimgttlsrvsngl.blue h1 {
-    color: rgba(0, 85, 164);
+    color: #001d6e;
 }
 
 .ctnmainimgttlsrvsngl h1 {
@@ -64,7 +64,7 @@
     appearance: none;
     outline: none;
     border: none;
-    background: rgba(0, 85, 164);
+    background: #001d6e;
     color: white;
     padding: .5rem 1rem .5rem 1rem;
     border-radius: 80px;
@@ -104,7 +104,7 @@
     text-align: left;
     font-size: 2rem;
     width: 100%;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
 }
 
 .ctnservicesnaturalisationexpl {
@@ -131,7 +131,7 @@
     font-size: 1.5rem;
     margin: 1rem 0 .5rem 0;
     line-height: 1.1;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
 }
 
 .ctnservicesnaturalisationicns {
@@ -155,7 +155,7 @@
 }
 
 .naturalisationicns span {
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     font-size: 1rem;
     font-weight: 550;
 }
@@ -175,7 +175,7 @@
 .ctntakeappointmentexpert h3 {
     font-size: 2.3rem;
     margin: 0 0 0 0;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     font-weight: 550;
 }
 
@@ -231,7 +231,7 @@
     .ctnmainimgttlsrvsngl h1 {
         font-size: 1.8rem;
         z-index: 2;
-        color: rgba(0, 85, 164);
+        color: #001d6e;
         font-weight: 600;
         margin: 0 0 .5rem 0;
     }
@@ -244,7 +244,7 @@
         padding: 1.5rem 1.75rem 1.5rem 1.75rem;
     }
     .ctnservicesinglepage {
-        margin: 80px 0 0 0;
+        margin: 115px 0 0 0;
     }
     .ctntxtnaturalisationsrv h2 {
         width: 100%;

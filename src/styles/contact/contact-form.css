@@ -22,7 +22,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0 0 0 0;
     font-weight: 900;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     font-size: 1.75rem;
     width: 100%;
 }
@@ -42,7 +42,7 @@
     font-family: 'Poppins', sans-serif;
     opacity: 1;
     align-self: flex-end;
-    background: rgba(0, 85, 164);
+    background: #001d6e;
 }
 
 .formcontactuscntctpg button:hover {
@@ -103,7 +103,7 @@
 .inputctncntctus label {
     position: absolute;
     font-size: 1rem;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     left: 0;
     transition: all .25s ease;
     font-family: 'Poppins', sans-serif;
@@ -150,7 +150,7 @@
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     text-decoration: underline;
 }
 
@@ -164,7 +164,7 @@
 }
 
 .dropdownroller.active:hover {
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     text-decoration: none;
 }
 
@@ -199,7 +199,7 @@
     background-color: white;
     height: 30px;
     padding: 0 0 0 1rem;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
 }
 
 .ctnddownchooseeventtypecntct label:hover {
@@ -217,7 +217,7 @@
     text-align: left;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     opacity: 1;
 }
 
@@ -247,7 +247,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     text-decoration: underline;
-    color: rgba(0, 85, 164);
+    color: #001d6e;
     transition: all .2s ease;
     cursor: pointer;
     text-decoration: none;
@@ -304,7 +304,7 @@
     }
     .formcontactuscntctpg h3 {
         font-weight: 550;
-        color: rgba(0, 85, 164);
+        color: #001d6e;
         font-size: 1.25rem;
         text-align: center;
     }

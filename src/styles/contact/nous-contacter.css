@@ -1,10 +1,10 @@
 .ctncntctpgwrp {
     display: flex;
-    margin: 100px 0 0 0;
+    margin: 135px 0 0 0;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: rgba(0, 85, 164);
+    background-color: #001d6e;
 }
 
 .wrpcontactform {
@@ -40,14 +40,14 @@
         align-items: center;
     }
     .ctncntctpgwrp {
-        margin: 80px 0 0 0;
+        margin: 115px 0 0 0;
         background-color: white;
     }
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
     .ctncntctpgwrp {
-        margin: 80px 0 0 0;
+        margin: 115px 0 0 0;
         background-color: white;
     }
     .ctncontactformpg {
