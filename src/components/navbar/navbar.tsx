@@ -97,14 +97,14 @@ export default function Navbar({
                     <span>Lun-Sam de 10h à 18h</span>
                 </a>
                 <a
-                    href="https://wa.me/+33123742312"
+                    href="https://wa.me/+33771473026"
                     className="ctnflashinfo"
                 >
                     <img
                         alt=""
                         src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/svgphonewhite.svg"
                     />
-                    <span>+33 1 23 74 23 12</span>
+                    <span>+33 7 71 47 30 26</span>
                 </a>
                 <a
                     href="mailto:contact@solution-papiers.fr"

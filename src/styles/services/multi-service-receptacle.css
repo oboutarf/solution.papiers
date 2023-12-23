@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.ctnservicesinglepage span {
+    font-family: 'Open-Sans', sans-serif !important;
+}
+
 .ctnmainimgsrvsngl {
     width: 100%;
     display: flex;

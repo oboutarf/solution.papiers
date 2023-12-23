@@ -7,6 +7,10 @@
     margin: 135px 0 5rem 0;
 }
 
+.wrapservicesallpg span {
+    font-family: 'Open-Sans', sans-serif !important;
+}
+
 .bgimgnoservicespg {
     width: 100%;
 }

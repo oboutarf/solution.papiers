@@ -47,9 +47,9 @@ export default function Footer({
                         <div className="ctncontactinfofooter">
                             <a
                                 target="_blank"
-                                href="https://wa.me/+33123742312"
+                                href="https://wa.me/+33771473026"
                             >
-                                +33 1 23 74 23 12
+                                +33 7 71 47 30 26
                             </a>
                         </div>
                         <div className="ctncontactinfofooter">
