@@ -107,14 +107,14 @@ export default function Navbar({
                     <span>+33 7 71 47 30 26</span>
                 </a>
                 <a
-                    href="mailto:contact@solution-papiers.fr"
+                    href="mailto:contact@solutionpapiers.fr"
                     className="ctnflashinfo"
                 >
                     <img
                         alt=""
                         src="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/icons/svgmailwhite.svg"
                     />
-                    <span>contact@solution-papiers.fr</span>
+                    <span>contact@solutionpapiers.fr</span>
                 </a>
 		    </div>
             <div className="wrpnavbarcntnt">

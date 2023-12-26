@@ -142,9 +142,9 @@ export default function ContactForm({
                 />
                 <span className="ctntextpoliticsformcntctpg">
                     En soumettant ce formulaire, vous acceptez les
-                    <a href="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/cgu.docx" target="_blank"> Conditions d'utilisation </a>
+                    <a href="/cgu" target="_blank"> Conditions d'utilisation </a>
                     et vous confirmez avoir lu la
-                    <a href="https://ptgtzkrlzagjqwcntumc.supabase.co/storage/v1/object/public/solution_papiers/ppdp.docx" target="_blank"> Politique de confidentialité </a>
+                    <a href="/politique-de-confidentialite" target="_blank"> Politique de confidentialité </a>
                     de Solution Papiers
                 </span>
             </div>
