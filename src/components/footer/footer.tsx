@@ -39,28 +39,36 @@ export default function Footer({
                         </div>
                     </div>
                     <div className="ctncontactusfooter">
-                        <a href="/nous-contacter">NOUS CONTACTER</a>
+                        <a className="ttlnoserviceslnk" href="/nous-contacter">NOUS CONTACTER</a>
                         <div className="ctncntntcontactusfooter">
-                        <span className="ctnaddrfootercontactus">
-                            Pl. de l'Hôtel de Ville<br/>75004 Paris, France
-                        </span>
-                        <div className="ctncontactinfofooter">
-                            <a
-                                target="_blank"
-                                href="https://wa.me/+33771473026"
-                            >
-                                +33 7 71 47 30 26
+                            <span className="ctnaddrfootercontactus">
+                                Pl. de l'Hôtel de Ville<br/>75004 Paris, France
+                            </span>
+                            <div className="ctncontactinfofooter">
+                                <a
+                                    target="_blank"
+                                    href="https://wa.me/+33771473026"
+                                >
+                                    +33 7 71 47 30 26
+                                </a>
+                            </div>
+                            <div className="ctncontactinfofooter">
+                                <a
+                                    target="_blank"
+                                    href="mailto:contact@solutionpapiers.fr"
+                                >
+                                    contact@solutionpapiers.fr
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="ctnpoliticslegalftr">
+                            <a href="/politique-de-confidentialite">
+                                Politique de confidentialité
                             </a>
-                        </div>
-                        <div className="ctncontactinfofooter">
-                            <a
-                                target="_blank"
-                                href="mailto:contact@solution-papiers.fr"
-                            >
-                                contact@solution-papiers.fr
+                            <a href="/cgu">
+                                Conditions Générales d'Utilisation
                             </a>
-                        </div>
-                        </div>
                     </div>
                 </div>
             </div>

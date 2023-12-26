@@ -145,6 +145,9 @@
     width: 300px;
     align-items: flex-start;
     justify-content: flex-start;
+    border-bottom: 1px solid #001d6e !important;
+    border-left: 1px solid #001d6e;
+    border-right: 1px solid #001d6e;
 }
 
 .ctnnavredirectslnks a {
@@ -247,9 +250,7 @@
         display: none;
     }
     .wrapnavbarctn {
-
         height: 80px;
-        /* position: relative; */
     }
     .wrpnavcntntresponsive {
         display: flex;
