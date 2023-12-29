@@ -23,7 +23,8 @@ export default function RootLayout({
   return (
 	<html lang="en">
 		<head>
-			<script 
+
+			<script
 				dangerouslySetInnerHTML={{
 					__html: 
 					`!function(f,b,e,v,n,t,s)
@@ -38,6 +39,7 @@ export default function RootLayout({
 					fbq('track', 'PageView');`
 				}}
 			/>
+
 			<noscript>
 				<img
 					width="1"
@@ -46,6 +48,7 @@ export default function RootLayout({
 					src="https://www.facebook.com/tr?id=6843603399089446&ev=PageView&noscript=1"
 				/>
 			</noscript>
+
 			<script async type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 			<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"/>

@@ -1,5 +1,9 @@
 import React, { useRef, useState, useEffect, FormEvent } from 'react';
-import { DROPDOWN_CONTACT_US } from '@/utils/constants/constant';
+import {
+    EMAIL_VALIDATOR,
+    PHONE_VALIDATOR,
+    DROPDOWN_CONTACT_US
+} from '@/utils/constants/constant';
 
 import '@/styles/contact/contact-form.css';
 
@@ -23,10 +27,100 @@ export default function ContactForm({
         email: '',
         phone: '',
         typeRDV: '',
-        politics: true
+        politics: ''
     });
+    const [formSubmitError, setFormSubmitError] = useState<boolean>(false);
+    const [formSubmitSuccess, setFormSubmitSuccess] = useState<boolean>(false);
 
-    const handleSubmit = (e: FormEvent) => {
+      
+    async function handleSubmit(e: FormEvent) {
+        e.preventDefault();
+        setFormSubmitError(false);
+        setFormSubmitSuccess(false);
+        if (!formContactUs.first_name.length)
+            return (
+                setFormContactUsErr(prev => ({
+                    ...prev,
+                    first_name: 'Saisissez un prénom.'
+                }))
+            );
+        setFormContactUsErr(prev => ({...prev, first_name: ''}));
+        if (!formContactUs.last_name.length)
+            return (
+                setFormContactUsErr(prev => ({
+                    ...prev,
+                    last_name: 'Saisissez un nom.'
+                }))
+            );
+        setFormContactUsErr(prev => ({...prev, last_name: ''}));
+        if (!formContactUs.email.length || !EMAIL_VALIDATOR.test(formContactUs.email))
+            return (
+                setFormContactUsErr(prev => ({
+                    ...prev,
+                    email: 'Saisissez un email valide.'
+                }))
+            );
+        setFormContactUsErr(prev => ({...prev, email: ''}));
+        if (!formContactUs.phone.length || !PHONE_VALIDATOR.test(formContactUs.phone))
+            return (
+                setFormContactUsErr(prev => ({
+                    ...prev,
+                    phone: 'Saisissez un numéro de téléphone valide.'
+                }))
+            );
+        setFormContactUsErr(prev => ({...prev, phone: ''}));
+        if (!formContactUs.typeRDV.length)
+            return (
+                setFormContactUsErr(prev => ({
+                    ...prev,
+                    typeRDV: 'Choisissez un type de rendez-vous.'
+                }))
+            );
+        setFormContactUsErr(prev => ({...prev, typeRDV: ''}));
+        if (!formContactUs.politics)
+            return (
+                setFormContactUsErr(prev => ({
+                    ...prev,
+                    politics: 'Veuillez cocher cette case avant de continuer.'
+                }))
+            );
+        setFormContactUsErr(prev => ({...prev, politics: ''}));
+
+        const add_customer = {
+            first_name: formContactUs.first_name,
+            last_name: formContactUs.last_name,
+            email: formContactUs.email,
+            phone: formContactUs.phone,
+            typeRDV: formContactUs.typeRDV
+        };
+        const form_add_customer = new FormData();
+        form_add_customer.append('form', JSON.stringify(add_customer));
+
+        const response = await fetch('/api/customer', {
+            method: 'POST',
+            body: form_add_customer
+        });
+        const data = await response.json();
+        if (data.ok)    {
+            setFormContactUs({
+                first_name: '',
+                last_name: '',
+                email: '',
+                phone: '',
+                typeRDV: '',
+                politics: false
+            });
+            setFormSubmitSuccess(true);
+            setTimeout(() => 
+                setFormSubmitSuccess(false)
+            , 7500);
+        }
+        else    {
+            setFormSubmitError(true);
+            setTimeout(() => 
+                setFormSubmitError(false)
+            , 5000);
+        }
 
     };
 
@@ -131,7 +225,7 @@ export default function ContactForm({
             </div>
             <div className="ctncgupoliticsaccept">
                 <input
-                    checked={formContactUs.politics} 
+                    checked={formContactUs.politics}
                     type="checkbox"
                     onChange={(e) => 
                         setFormContactUs(prev => ({
@@ -148,10 +242,18 @@ export default function ContactForm({
                     de Solution Papiers
                 </span>
             </div>
-            { !formContactUsErr.politics ?
-                <span className="formerr politics">{'Veuillez cocher cette case avant de continuer.'}</span>
+            { formContactUsErr.politics.length ?
+                <span className="formerr politics">
+                    {formContactUsErr.politics}
+                </span>
                 : 
                 null
+            }
+            { formSubmitSuccess ? 
+                <span className="successsubmit">Le formulaire a été envoyé avec succès, nous vous contacterons dans les plus brefs délais.</span>
+                : formSubmitError ?
+                    <span className="errsubmit">Une erreur est survenue lors de l'envoi du fomulaire.</span>
+                    : null
             }
             <button type="submit">Envoyer le formulaire</button>
         </form>

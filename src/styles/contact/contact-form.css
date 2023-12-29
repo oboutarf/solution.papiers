@@ -225,10 +225,28 @@
     opacity: 0;
 }
 
+.successsubmit {
+    font-size: 1rem;
+    color: green;
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.errsubmit {
+    font-size: 1rem;
+    color: red;
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-weight: 400;
+
+}
+
 .ctncgupoliticsaccept {
     width: 100%;
     gap: .75rem;
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
