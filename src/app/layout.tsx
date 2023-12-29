@@ -6,18 +6,18 @@ import Footer from '@/components/footer/footer';
 import '@/styles/global/global.css';
 
 const inter = Inter({
-  subsets: ['latin']
+	subsets: ['latin']
 });
 
 export const metadata: Metadata = {
-  title: 'Solution Papiers',
-  description: 'Powered by ESO Automation'
+	title: 'Solution Papiers',
+	description: 'Powered by ESO Automation'
 };
 
 export default function RootLayout({
-  children,
+  	children,
 }: {
-  children: React.ReactNode
+  	children: React.ReactNode
 }) {
 
   return (
