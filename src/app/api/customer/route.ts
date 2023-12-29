@@ -41,7 +41,7 @@ export const POST = async (req: NextRequest) => {
             last_name: form_data.last_name,
             email: form_data.email,
             phone: form_data.phone,
-            type: form_data.type
+            type: form_data.typeRDV
         });
     if (add_customer.error)
         return (
